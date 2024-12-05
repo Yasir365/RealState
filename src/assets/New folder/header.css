@@ -1,0 +1,79 @@
+header .navbar {
+    padding: 0 2rem;
+}
+
+header .logo-container {
+    width: 150px;
+    height: 100px;
+}
+
+header .navbar img {
+    padding: 0;
+    width: 100%;
+}
+
+header .navbar .navbar-toggler button:focus:not(:focus-visible) {
+    outline: 0;
+}
+
+header .navbar .navbar-toggler i {
+    color: #3b5cc1;
+}
+
+header .navbar .navbar-nav {
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 4px 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+header .navbar .navbar-nav .nav-item a {
+    color: #000;
+    margin: 4px;
+}
+
+header .navbar .navbar-nav .nav-item a.active {
+    background-color: #1b52f7;
+    color: #fff;
+    border-radius: 100px;
+    padding: 5px 30px 5px 12px;
+}
+
+header .navbar .phone-number i,
+header .navbar .phone-number span,
+header .navbar .phone-number a {
+    color: #000;
+}
+
+header .navbar .phone-number a:hover {
+    color: silver;
+    cursor: pointer;
+}
+
+/*--------------- Media Query Section------------- */
+@media screen and (max-width: 525px) {
+    header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    header .navbar {
+        padding: .5rem 0;
+    }
+
+    header .navbar .navbar-nav {
+        justify-content: start;
+        align-items: start;
+        border-radius: 12px;
+    }
+
+    .hero .content-left {
+        margin-top: 76px;
+    }
+}

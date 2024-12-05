@@ -1,0 +1,353 @@
+.TotalValue {
+    color: #1F92F6;
+}
+
+.cardSection {
+    width: 100%;
+    height: 522px;
+    top: 343px;
+    left: 203px;
+    gap: 0px;
+    border-radius: 40px;
+    opacity: 0px;
+}
+
+.card1 {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 1399px;
+    height: 439px;
+    top: 385px;
+    left: 261px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.cardImg {
+    width: 100%;
+    top: 385px;
+    left: 261px;
+    gap: 0px;
+    border-radius: 20px;
+    opacity: 0px;
+
+}
+
+.cardContent {
+    width: 802px;
+    height: 395px;
+    margin-left: 0;
+    gap: 0px;
+    border-radius: 9999px 0px 0px 0px;
+    opacity: 0px;
+
+}
+
+.card2_Content {
+    width: 802px;
+    height: 395px;
+    margin-left: 0;
+    gap: 0px;
+    border-radius: 9999px 0px 0px 0px;
+    opacity: 0px;
+
+}
+
+.cardContentTilte {
+    width: 802px;
+    height: 49px;
+    top: 407px;
+    left: 858px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: JetBrains Mono;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 28.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.cardDesc {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.card2_title {
+    width: 576px;
+    height: 34px;
+    top: 957px;
+    left: 261px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: JetBrains Mono;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 33.53px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.visitBtn {
+    background: #006FFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 12px;
+    /* Adjust padding */
+    display: flex;
+    align-items: center;
+    width: 148px;
+    height: 34px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 0 !important;
+}
+
+/* Default (Desktop) Styles */
+.pendingProps {
+    width: 100%;
+    max-width: 1512px;
+    height: 144px;
+    gap: 0px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pendingProps img {
+    border-radius: 20px;
+}
+
+.Voting {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-image: url('./images/contact.png');
+    background-size: cover;
+    width: 1514px;
+    height: 180px;
+    gap: 0px;
+    opacity: 0px;
+    border-radius: 35.4px;
+    overflow: hidden;
+}
+
+.Voting::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-image: url('./images/balls.png');
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.voting_font {
+    font-family: Lato;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 48px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ffffff;
+}
+
+.proposal {
+    width: 246px;
+    height: 50px;
+    top: 66px;
+    left: 848px;
+    padding: 5px 16px 5px 16px;
+    gap: 0px;
+    border-radius: 9999px;
+    opacity: 0px;
+    background-color: #FFFFFF;
+    justify-content: center;
+}
+
+.proposalParent {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 992px) {
+    .pendingProps {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 1rem;
+    }
+
+    .pendingProps span {
+        flex: 1 1 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .pendingProps img {
+        width: 50%;
+    }
+
+    .visitBtn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .pendingListing {
+        margin-top: 5rem !important;
+    }
+
+    .disply {
+        display: none !important;
+    }
+
+    .display {
+        display: flex !important;
+    }
+
+    .voteSection {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .voting_font {
+        justify-content: center;
+    }
+
+    .proposal {
+        width: 100%;
+    }
+
+    .proposalParent {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .pendingProps {
+        padding: 10px;
+        gap: 0.5rem;
+    }
+
+    .pendingProps img {
+        width: 50%;
+        height: auto;
+    }
+
+    .pendingListing {
+        margin-top: 10rem !important;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .card1 {
+        padding: 1rem;
+    }
+
+    .cardContentTitle {
+        font-size: 1.2rem;
+    }
+
+    .cardDesc {
+        font-size: 0.9rem;
+    }
+
+    .TotalVal {
+        width: 100%;
+    }
+
+    .pendingListing {
+        margin-top: 10rem !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .card1 {
+        padding: 1rem;
+    }
+
+    .cardContentTitle {
+        font-size: 1.2rem;
+    }
+
+    .cardDesc {
+        font-size: 0.9rem;
+    }
+
+    .cardContent {
+        gap: 24px;
+        margin-left: 0 !important;
+    }
+
+    .card1_section {
+        height: 100vh !important;
+    }
+
+    .card2_Content {
+        gap: 24px;
+        margin-left: 0 !important;
+    }
+
+    .TotalVal {
+        width: 100%;
+    }
+
+    .card2_title {
+        font-size: 25px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .cardSection {
+        width: 50%;
+    }
+
+    .card1 {
+        padding: 2rem;
+    }
+
+    .cardContent {
+        margin-left: 5rem !important;
+    }
+
+    .cardContentTitle {
+        font-size: 1.5rem;
+    }
+
+    .cardDesc {
+        font-size: 1rem;
+    }
+
+    .TotalVal {
+        width: 631px !important;
+    }
+
+    .disply {
+        display: flex !important;
+    }
+
+    .display {
+        display: none !important;
+    }
+}
