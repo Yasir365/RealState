@@ -13,17 +13,12 @@
     font-display: swap;
 }
 
-
-// * {
-//     box-sizing: border-box;
-//     margin: 0;
-//     padding: 0;
-//     font-family: "Poppins", sans-serif;
-// }
-
-* {
-    font-family: "Poppins", sans-serif;
+@font-face {
+    src: url(/assets/fonts/Graphik-Regular-Trial.otf);
+    font-family: graphik;
+    font-display: swap;
 }
+
 
 :root {
     /* Primary Colors */
@@ -45,7 +40,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "graphik", sans-serif;
 }
 
 body {
