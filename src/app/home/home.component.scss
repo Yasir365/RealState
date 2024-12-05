@@ -1,0 +1,277 @@
+// a {
+//     text-decoration: none;
+// }
+
+// .readmore {
+//     background: #006FFF;
+//     text-decoration: none;
+//     color: #ffffff;
+//     border: none;
+//     border-radius: 20px;
+//     padding: 8px 12px;
+//     display: flex;
+//     align-items: center;
+//     width: 148px;
+//     height: 34px;
+//     font-size: 16px;
+//     font-weight: 700;
+//     line-height: 24px;
+//     text-align: center;
+//     cursor: pointer;
+// }
+
+// .readmore:hover {
+//     background: var(--secondary-orange);
+//     transition: all 0.3s ease;
+// }
+
+
+
+
+
+
+// /* Hero section */
+// #hero {
+//     min-height: 82vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+// }
+
+// #hero::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: url("./images/globe.gif");
+//     background-position: top right;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     opacity: 0.4;
+//     z-index: 700;
+// }
+
+// #hero .title {
+//     font-size: 5rem;
+//     font-weight: 800;
+//     line-height: 28.8px;
+//     text-align: left;
+//     width: 100%;
+//     text-align: center;
+//     color: #006FFF;
+//     position: relative;
+//     z-index: 1000;
+// }
+
+// #hero .sub-title {
+//     font-size: 1.6rem;
+//     font-weight: 600;
+//     line-height: 48px;
+//     text-align: center;
+//     color: var(--black);
+//     position: relative;
+//     z-index: 1000;
+// }
+
+// #hero .options {
+//     font-size: 1.6rem;
+//     font-weight: 700;
+//     line-height: 35.1px;
+//     display: flex;
+//     justify-content: center;
+//     gap: 8px;
+//     position: relative;
+//     z-index: 1000;
+// }
+
+// #hero .options .option1,
+// #hero .options .option3 {
+//     color: #006FFF;
+// }
+
+// #hero .options .option2 {
+//     color: var(--secondary-orange);
+// }
+
+// #hero .description {
+//     font-size: 16px;
+//     font-weight: 400;
+//     line-height: 28px;
+//     text-align: left;
+//     text-align: center;
+//     color: var(--black);
+//     position: relative;
+//     z-index: 1000;
+// }
+
+
+
+
+// /* About section */
+// #about .wrapper {
+//     border: 1px solid var(--secondary-gray);
+//     background-color: var(--white);
+//     padding: 2rem;
+//     border-radius: 20px;
+// }
+
+// #about .main-heading {
+//     color: #006FFF;
+//     font-size: 42px;
+//     font-weight: 700;
+//     line-height: 48px;
+// }
+
+// #about .sub-heading {
+//     color: var(--black);
+// }
+
+// #about .description {
+//     padding-left: 1rem;
+//     color: var(--black);
+// }
+
+
+
+
+
+// /* TOKEN COMMITMENT */
+// #tokenCommitment .main-heading {
+//     width: 576px;
+//     height: 48px;
+//     font-size: 42px;
+//     font-weight: 900;
+//     line-height: 48px;
+//     text-align: left;
+//     color: #4E4E4E;
+// }
+
+// #tokenCommitment .description {
+//     width: 100%;
+//     height: 48px;
+//     font-size: 15.88px;
+//     font-weight: 400;
+//     line-height: 24px;
+//     text-align: left;
+// }
+
+
+// #tokenCommitment .tokenImg {
+//     width: 309.92px;
+//     height: 288.44px;
+// }
+
+// #tokenCommitment .card-wrapper {
+//     width: 489px;
+//     height: 227px;
+//     gap: 16px;
+//     opacity: 0px;
+//     display: flex;
+//     flex-direction: column;
+// }
+
+// #tokenCommitment .card-header {
+//     width: 489px;
+//     height: 56px;
+//     gap: 24px;
+//     opacity: 0px;
+// }
+
+// #tokenCommitment .title {
+//     font-size: 1.7rem;
+//     font-weight: 800;
+//     line-height: 28px;
+//     text-align: left;
+// }
+
+// #tokenCommitment .description {
+//     width: 70%;
+//     height: 117px;
+//     max-width: 448px;
+//     text-align: left;
+//     gap: 0px;
+//     color: #475569;
+// }
+
+
+
+
+
+
+// /* Tokenomics section */
+// #tokenomics .wrapper {
+//     border: 1px solid var(--secondary-gray);
+//     background-color: var(--white);
+//     padding: 2rem;
+//     border-radius: 20px;
+// }
+
+// #tokenomics .content {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// #tokenomics .content .main-heading {
+//     color: var(--black);
+//     font-size: 2.5rem;
+//     font-weight: 700;
+//     line-height: 48px;
+// }
+
+// #tokenomics .content .sub-heading {
+//     font-size: 1.5rem;
+//     font-weight: 600;
+// }
+
+// #tokenomics .content .description {
+//     font-size: 1rem;
+//     font-weight: 500;
+// }
+
+// #tokenomics .img-wrapper {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// #tokenomics .img-wrapper img {
+//     width: 100%;
+//     height: 370px;
+// }
+
+
+
+
+
+
+
+
+
+// /* Community */
+// #community .title {
+//     font-size: 3rem;
+//     font-weight: 900;
+//     line-height: 48px;
+//     text-align: center;
+// }
+
+// #community .about_1 {
+//     font-size: 17.86px;
+//     font-weight: 800;
+//     line-height: 28px;
+//     text-align: left;
+//     color: var(--black);
+// }
+
+// #community .description {
+//     width: 486px;
+//     font-size: 16px;
+//     font-weight: 400;
+//     line-height: 29.25px;
+//     text-align: center;
+
+// }

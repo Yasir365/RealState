@@ -1,0 +1,65 @@
+<header class="container">
+    <nav class="navbar navbar-expand-lg py-4">
+        <div class="container-fluid">
+            <a href="index.html" class="logo-container">
+            <img class="image-flude navbar-brand" src="./images/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" href="/services.html">Whitepaper</a>
+                </li>
+                <li class="nav-item" >
+                <a class="nav-link active" href="./Vote.html" id="link1">Get Started</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#myModal"   id="link2">Login</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="position: relative;top: 8rem;">
+            <!-- Modal Header -->
+            <div class="modal-header justify-content-between ">
+                <h5 class="modal-title">Login</h5>
+                <button type="button" class="close" style=" border: none;font-size: 24px;" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <form method="post" action="" name="login_form">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email Address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Password</label>
+                        <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Enter password">
+                        <!-- <small id="emailHelp" class="form-tet text-muted">We'll never share your email with anyone else.</small> -->
+                    </div>
+                    <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    <a href="#" class="ml-3">Forgot Password?</a>
+                    </div>
+                </form>
+            </div>
+        
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <span>New To MyWebsite.com?</span>
+                <a href="#" class="btn btn-secondary">Register</a>
+            </div>
+        </div>
+    </div>
+</div>
