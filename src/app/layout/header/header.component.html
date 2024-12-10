@@ -1,93 +1,53 @@
-<header class="">
+<header>
     <nav class="navbar navbar-expand-lg py-4">
         <div class="container-fluid">
             <a routerLink="/" class="logo-container">
                 <img class="image-flude navbar-brand" src="/assets/images/logo.png" alt="logo">
             </a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" >
                 <i class="fa-solid fa-bars"></i>
             </button>
             
             <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav navbar-nav2  ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
-                </li>
-                <li class="nav-item" >
-                    <a class="nav-link" routerLink="/about-us" routerLinkActive="active">About Us </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLinkActive="active">
-                        Features
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" routerLink="/tokenomics" routerLinkActive="active">Tokenomics </a>
-                        <a class="dropdown-item" routerLink="/token-commitment" routerLinkActive="active">Token Commitment</a>
-                        <a class="dropdown-item" routerLink="/governance" routerLinkActive="active">Governance</a>
-                    </div>
-                </li>
-                <li class="nav-item" >
-                    <a class="nav-link" routerLink="/community" routerLinkActive="active">Community</a>
-                </li>
-                <li class="nav-item" >
-                    <a class="nav-link" routerLink="/contact-us" routerLinkActive="active">Contact Us</a>
-                </li>
-                
-            </ul>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/vote" routerLinkActive="active">Vote</a>
-                </li>
-                <li class="nav-item" >
-                    <a class="nav-link" routerLink="/timeline" routerLinkActive="active">Timeline</a>
-                </li>
-                <li class="nav-item" >
-                    <a class="nav-link" routerLink="/post" routerLinkActive="active">Post</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal" id="link2">Login</a>
-                </li>
-            </ul>
+                <ul class="navbar-nav navbar-nav2  ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/index" routerLinkActive="active">Home</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link" routerLink="/about-us" routerLinkActive="active">About Us </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLinkActive="active">
+                            Features
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" routerLink="/tokenomics" routerLinkActive="active">Tokenomics </a>
+                            <hr class="mt-2 mb-2">
+                            <a class="dropdown-item" routerLink="/token-commitment" routerLinkActive="active">Token Commitment</a>
+                            <hr class="mt-2 mb-2">
+                            <a class="dropdown-item" routerLink="/governance" routerLinkActive="active">Governance</a>
+                        </div>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link" routerLink="/community" routerLinkActive="active">Community</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link" routerLink="/contact-us" routerLinkActive="active">Contact Us</a>
+                    </li>
+                    
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/vote" routerLinkActive="active">Vote</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link" routerLink="/timeline" routerLinkActive="active">Timeline</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link" routerLink="/post" routerLinkActive="active">Post</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 </header>
-
-
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" style="position: relative;top: 8rem;">
-            <!-- Modal Header -->
-            <div class="modal-header justify-content-between ">
-                <h5 class="modal-title">Login</h5>
-                <button type="button" class="close" style=" border: none;font-size: 24px;" data-bs-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            
-            <!-- Modal Body -->
-            <div class="modal-body">
-                <form method="post" action="" name="login_form">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email Address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Password</label>
-                        <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Enter password">
-                        <!-- <small id="emailHelp" class="form-tet text-muted">We'll never share your email with anyone else.</small> -->
-                    </div>
-                    <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Sign in</button>
-                    <a href="#" class="ml-3">Forgot Password?</a>
-                    </div>
-                </form>
-            </div>
-        
-            <!-- Modal Footer -->
-            <div class="modal-footer">
-                <span>New To MyWebsite.com?</span>
-                <a href="#" class="btn btn-secondary">Register</a>
-            </div>
-        </div>
-    </div>
-</div>

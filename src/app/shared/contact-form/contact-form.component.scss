@@ -1,0 +1,78 @@
+.contact-wrapper {
+    position: relative;
+    background-color: #1F92F6;
+    background-image: url('/assets/images/balls.png');
+    background-size: cover;
+    border-radius: 40px;
+    padding: 3rem;
+    z-index: 999;
+    
+    .main-heading {
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 48px;
+        font-family: "torque", sans-serif;
+        word-spacing: 6px;
+        letter-spacing: 6px;
+        text-align: center;
+        color: var(--white);
+    }
+
+    form {
+
+        input {
+            border-radius: 12px;
+            border: 1.32px solid var(--secondary-gray);
+            outline: none;
+            width: 100%;
+            padding: 16px 6.61px 16px 23.79px;
+            background: transparent;
+            color: var(--white);
+
+            &::placeholder {
+                color: var(--white);
+                opacity: 1;
+                font-weight: 500;
+                line-height: 30px;
+                text-align: left;
+            }
+
+        }
+
+        textarea {
+            border-radius: 12px;
+            border: 1.32px solid var(--secondary-gray);
+            outline: none;
+            width: 100%;
+            background: transparent;
+            color: var(--white);
+            padding: 16px 6.61px 16px 23.79px;
+
+            &::placeholder {
+                color: var(--white);
+                opacity: 1;
+                line-height: 30px;
+                text-align: left;
+
+            }
+        }
+
+        .error {
+            margin: 6px 6px 1rem 0;
+            color: red;
+        }
+
+        button {
+            width: 311px;
+            height: 50px;
+            padding: 5px 10px 5px 16px;
+            border: none;
+            border-radius: 99px 99px 99px 99px;
+            opacity: 0px;
+            text-align: center;
+            background-color: var(--secondary-orange);
+            color: var(--white);
+        }
+
+    }
+}
