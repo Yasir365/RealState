@@ -1,79 +1,79 @@
 <div class="timeline-container">
-    <header class="timeline-header">
-      <h1 class="timeline">Your Timeline</h1>
-      <nav class="timeline-tabs">
-        <a href="#" class="active">All Polls</a>
-        <a href="#">Live Polls</a>
-        <a href="#">Closed Poll</a>
-      </nav>
-    </header>
+  <div class="timeline-header">
+    <h1 class="timeline">Your Timeline</h1>
+    <nav class="timeline-tabs mt-4">
+      <a href="#" class="active">All Polls</a>
+      <a href="#">Live Polls</a>
+      <a href="#">Closed Poll</a>
+    </nav>
+  </div>
   
-    <section class="poll">
+  <section class="poll mt-5">
+    <div class="poll-header">
+      <div>
+      <img src="/assets/images/profile.png" alt="Profile" class="profile-pic" />
+        <span class="poll-user">M. March</span>
+        <span class="poll-time ms-2">2 hrs. ago</span>
+      </div>
+      <span class="poll-date">11th April, 2023</span>
+    </div>
+    <p class="poll-text">
+      Adapt I LP provides non-U.S. investors access to short-term U.S. Treasury Bill yields. The Fund's investment strategy is designed to preserve capital, offer stable.
+    </p>
+    <div class="vote-section">
+      <label><input type="radio" checked="true" name="vote1" /> Yes</label>
+      <label><input type="radio" name="vote1" /> No</label>
+    </div>
+    <div class="poll-footer">
+      <span class="poll-votes">
+      <img src="/assets/images/vote.png" />
+          Voted: <b>21 votes</b></span>
+      <span class="poll-timer">17 hours left</span>
+    </div>
+  </section>
+  <section class="poll mt-4">
       <div class="poll-header">
-        <div>
-        <img src="/assets/images/profile.png" alt="Profile" class="profile-pic" />
-          <span class="poll-user">M. March</span>
-          <span class="poll-time">2 hrs. ago</span>
+        <div class="user-info">
+          <img src="/assets/images/profile.png" alt="Profile Picture" class="profile-pic" />
+          <div>
+            <span class="user-name">M. March</span>
+            <span class="time-ago ms-2">2 hrs. ago</span>
+          </div>
         </div>
         <span class="poll-date">11th April, 2023</span>
       </div>
+    
       <p class="poll-text">
-        Adapt I LP provides non-U.S. investors access to short-term U.S. Treasury Bill yields. The Fund's investment strategy is designed to preserve capital, offer stable.
+        Adapt I LP provides non-U.S. investors access to short-term U.S. Treasury Bill yields. The Fund's investment strategy is designed to preserve capital, offer stable
       </p>
-      <div class="vote-section">
-        <label><input type="radio" checked="true" name="vote1" /> Yes</label>
-        <label><input type="radio" name="vote1" /> No</label>
-      </div>
-      <div class="poll-footer">
-        <span class="poll-votes">
-        <img src="/assets/images/vote.png" />
-            Voted: <b>21 votes</b></span>
-        <span class="poll-timer">17 hours left</span>
-      </div>
-    </section>
-    <section class="poll">
-        <div class="poll-header">
-          <div class="user-info">
-            <img src="/assets/images/profile.png" alt="Profile Picture" class="profile-pic" />
-            <div>
-              <span class="user-name">M. March</span>
-              <span class="time-ago">2 hrs. ago</span>
-            </div>
+    
+      <div class="poll-results">
+        <div class="result">
+          <div class="result-label">Yes</div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 67%;"></div>
           </div>
-          <span class="poll-date">11th April, 2023</span>
-        </div>
-      
-        <p class="poll-text">
-          Adapt I LP provides non-U.S. investors access to short-term U.S. Treasury Bill yields. The Fund's investment strategy is designed to preserve capital, offer stable
-        </p>
-      
-        <div class="poll-results">
-          <div class="result">
-            <div class="result-label">Yes</div>
-            <div class="progress-bar">
-              <div class="progress" style="width: 67%;"></div>
-            </div>
-            <div class="result-info">
-              <span>371,915 Bank</span>
-              <span>67%</span>
-            </div>
-          </div>
-          <div class="result">
-            <div class="result-label">No</div>
-            <div class="progress-bar">
-              <div class="progress" style="width: 80%;"></div>
-            </div>
-            <div class="result-info">
-              <span>371,915 Bank</span>
-              <span>80%</span>
-            </div>
+          <div class="result-info">
+            <span>371,915 Bank</span>
+            <span>67%</span>
           </div>
         </div>
-      </section>
-        <div class="poll-footer">
-          <span class="voted-info">
-            <img src="/assets/images/vote.png" />
-            Voted: <strong>21 votes</strong></span>
-          <span class="poll-status">Closed</span>
+        <div class="result">
+          <div class="result-label">No</div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%;"></div>
+          </div>
+          <div class="result-info">
+            <span>371,915 Bank</span>
+            <span>80%</span>
+          </div>
         </div>
       </div>
+  </section>
+  <div class="poll-footer">
+    <span class="voted-info">
+      <img src="/assets/images/vote.png" />
+      Voted: <strong>21 votes</strong></span>
+    <!-- <span class="poll-status">Closed</span> -->
+  </div>
+</div>
