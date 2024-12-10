@@ -64,3 +64,35 @@ p {
     z-index: 1;
     bottom: 0;
 }
+
+.comming-soon {
+    .image-wrapper {
+        height: 260px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--secondary-gray);
+        background-color: var(--white);
+        border-radius: 20px;
+
+        h1 {
+            font-size: 5rem;
+            font-weight: 800;
+            width: 100%;
+            text-align: center;
+            color: var(--primary-dark);
+            font-family: "torque", sans-serif;
+            word-spacing: 6px;
+            letter-spacing: 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .comming-soon .image-wrapper h1 {
+        font-size: 2rem;
+    }
+
+
+}
