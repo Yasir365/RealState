@@ -81,10 +81,11 @@ p {
             font-weight: 800;
             width: 100%;
             text-align: center;
-            color: var(--primary-dark);
+            color: var(--secondary-orange);
             font-family: "torque", sans-serif;
             word-spacing: 6px;
             letter-spacing: 8px;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
         }
     }
 }

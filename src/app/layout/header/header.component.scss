@@ -16,8 +16,9 @@ header .navbar img {
     width: 100%;
 }
 
-header .navbar .navbar-toggler button:focus:not(:focus-visible) {
-    outline: 0;
+header .navbar .navbar-toggler:focus {
+    border: 2px solid var(--secondary-green);
+    box-shadow: none;
 }
 
 header .navbar .navbar-toggler i {
@@ -103,9 +104,21 @@ header .navbar .phone-number a:hover {
         padding: 0;
     }
 
+    header .navbar .navbar-nav .nav-item{
+        width: 100%;
+        border-bottom: 1px solid var(--secondary-gray);
+    }
+
     header .navbar .navbar-nav .nav-item a {
         color: var(--black);
         margin: 0px;
+        padding: 5px 12px 5px 12px;
+    }
+
+    header .navbar .navbar-nav .nav-item a.active {
+        border-bottom: none;
+        border-radius: 0;
+        background-color: var(--secondary-gray);
     }
     header .navbar .navbar-nav .dropdown .dropdown-item {
         background-color: transparent;
@@ -114,6 +127,7 @@ header .navbar .phone-number a:hover {
     header .navbar .navbar-nav .dropdown .dropdown-menu {
         margin-top: 0;
         border: none;
+        padding-left: 12px;
     }
 
     header .navbar .navbar-nav .dropdown .dropdown-menu hr{
