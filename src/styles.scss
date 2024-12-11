@@ -108,11 +108,12 @@ p {
 .page-section {
     padding-top: 5rem;
 
-    .hero{
+    .hero {
         min-height: 50vh;
         display: flex;
         justify-content: center;
         align-items: center;
+
         .about-title {
             font-size: 3rem;
             color: var(--accent-blue);
@@ -123,7 +124,7 @@ p {
             letter-spacing: 8px;
         }
 
-        p{
+        p {
             width: 60%;
             margin: auto;
             text-align: center;
@@ -218,7 +219,7 @@ p {
 
             }
 
-            .submit-btn{
+            .submit-btn {
                 padding: 5px 12px;
                 border: none;
                 border-radius: 100px;
@@ -228,11 +229,12 @@ p {
             }
         }
 
-        .card3{
+        .card3 {
             flex: 1 1 calc(33.33% - 2rem);
             max-width: calc(33.33% - 2rem);
         }
-        .card2{
+
+        .card2 {
             flex: 1 1 calc(50% - 2rem);
             max-width: calc(50% - 2rem);
         }
@@ -255,16 +257,17 @@ p {
 }
 
 @media (max-width: 768px) {
-    .hero p{
+    .hero p {
         width: 100%;
     }
+
     .card,
     .card3,
     .card2 {
         flex: 1 1 calc(100% - 2rem);
         max-width: calc(100% - 2rem);
     }
-    
+
 
 
     .sub-paragraph {
