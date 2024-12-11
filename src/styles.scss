@@ -188,6 +188,22 @@ p {
                 background-color: var(--secondary-orange);
                 color: var(--white);
             }
+
+            .socialIcon {
+                display: flex;
+                gap: 12px;
+    
+                i {
+                    font-size: 1.6rem;
+                    color: var(--primary-dark);
+                }
+    
+                img {
+                    width: 28px;
+                    height: 26px;
+                }
+    
+            }
         }
 
         .card3 {
