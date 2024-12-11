@@ -28,7 +28,10 @@
         </div>
       </div>
       <div class="d-flex justify-content-center mt-5">
-        <button type="submit" [disabled]="contactForm.invalid"> Send Message </button>
+        <button type="submit" [disabled]="contactForm.invalid" class="d-flex justify-content-center align-items-center gap-2"> 
+          Send Message 
+          <div class="spinner-border" role="status" *ngIf="submitLoader"></div>
+        </button>
       </div>
     </form>
   </section>
