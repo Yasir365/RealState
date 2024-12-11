@@ -39,7 +39,7 @@ a {
 
 
 /* Hero section */
-#hero {
+.hero {
     min-height: 82vh;
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@ a {
     position: relative;
 }
 
-// #hero::before {
+// .hero::before {
 //     content: "";
 //     position: absolute;
 //     top: 0;
@@ -62,7 +62,7 @@ a {
 //     z-index: 700;
 // }
 
-#hero .title {
+.hero .title {
     font-size: 5rem;
     font-weight: 800;
     width: 100%;
@@ -76,7 +76,7 @@ a {
     margin-bottom: 3rem;
 }
 
-#hero .sub-title {
+.hero .sub-title {
     font-size: 1.6rem;
     font-weight: 600;
     text-align: center;
@@ -88,7 +88,7 @@ a {
     letter-spacing: 8px;
 }
 
-#hero .options {
+.hero .options {
     font-size: 1.6rem;
     font-weight: 800;
     display: flex;
@@ -102,16 +102,16 @@ a {
     color: var(--primary-dark);
 }
 
-#hero .options .option1,
-#hero .options .option3 {
+.hero .options .option1,
+.hero .options .option3 {
     color: var(--secondary-orange);
 }
 
-#hero .options .option2 {
+.hero .options .option2 {
     color: var(--primary-dark);
 }
 
-#hero .description {
+.hero .description {
     font-size: 1rem;
     font-weight: 400;
     line-height: 28px;
@@ -126,36 +126,49 @@ a {
 
 
 /* About section */
-#about .wrapper {
+.about .wrapper {
     border: 1px solid silver;
     background-color: #fff;
     padding: 2rem;
     border-radius: 20px;
 }
 
-#about .sub-heading {
+.about .sub-heading {
     color: #000;
 }
 
-#about .description {
-    padding-left: 1rem;
-    color: #000;
-}
-
-.hover-expand {
+.about .description {
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+    padding: 1rem 3rem 1rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border: 1px solid #000;
-    padding: .5rem 1rem;
-    border-radius: 6px;
+    color: #000;
+    text-align: justify;
 }
 
-.hover-expand:hover {
+.about .description:hover {
     white-space: normal;
     overflow: visible;
+}
+
+.about i{
+    border-radius: 100px;
+    padding: 4px 5px;
+    border: 1px solid var(--secondary-green);
+    position: absolute;
+    right: 8px;
+    top: 15px;
+}
+
+.about .description:hover i{
+    background-color: var(--secondary-green);
+    color: var(--white);
+    transform: rotate(180deg);
 }
 
 
@@ -164,7 +177,7 @@ a {
 
 
 /* TOKEN COMMITMENT */
-#tokenCommitment .description {
+.tokenCommitment .description {
     width: 100%;
     height: 48px;
     font-size: 15.88px;
@@ -173,24 +186,23 @@ a {
     text-align: left;
 }
 
-
-#tokenCommitment .tokenImg {
+.tokenCommitment .tokenImg {
     width: 309.92px;
     height: 288.44px;
 }
 
-.icon-wrapper {
+.tokenCommitment .icon-wrapper {
     width: 65px;
     height: 65px;
 }
 
-.icon-wrapper img {
+.tokenCommitment .icon-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#tokenCommitment .title {
+.tokenCommitment .title {
     font-size: 1.7rem;
     font-weight: 600;
     text-align: left;
@@ -198,7 +210,7 @@ a {
     letter-spacing: 4px;
 }
 
-#tokenCommitment .description {
+.tokenCommitment .description {
     width: 70%;
     height: 117px;
     max-width: 448px;
@@ -213,7 +225,7 @@ a {
 
 
 /* Community */
-#community .image-wrapper {
+.community .image-wrapper {
     width: 100%;
     height: 100%;
     display: flex;
@@ -221,12 +233,12 @@ a {
     align-items: center;
 }
 
-#community .image-wrapper img {
+.community .image-wrapper img {
     width: 100%;
     height: 338px;
 }
 
-#community .description {
+.community .description {
     font-size: 16px;
     // font-weight: 400;
     line-height: 29.25px;
@@ -235,43 +247,47 @@ a {
 }
 
 @media screen and (max-width: 992px) {
-    #hero .title {
+    .hero .title {
         font-size: 3rem;
     }
 
-    #hero .sub-title {
+    .hero .sub-title {
         font-size: 1.4rem;
         word-spacing: 2px;
         letter-spacing: 8px;
     }
 
-    #hero .options {
+    .hero .options {
         font-size: 1.4rem;
         word-spacing: 2px;
         letter-spacing: 8px;
     }
 
-    #hero .description {
+    .hero .description {
         font-size: 1rem;
     }
 
 }
 
 @media screen and (max-width: 525px) {
-    #hero .title {
+    .hero .title {
         font-size: 1.7rem;
     }
 
-    #hero .sub-title {
+    .hero .sub-title {
         font-size: 1.3rem;
         word-spacing: 2px;
         letter-spacing: 4px;
     }
 
-    #hero .options {
+    .hero .options {
         font-size: 1rem;
         word-spacing: 2px;
         letter-spacing: 4px;
     }
 
+    .tokenCommitment .description{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }

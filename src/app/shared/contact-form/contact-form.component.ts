@@ -15,6 +15,7 @@ export class ContactFormComponent {
   serviceID = 'service_i4ydub9';  
   templateID = 'template_504xfje';
   publicKey = 'UMljUzlyM80ldsi4x';
+  submitLoader = false;
 
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
@@ -28,16 +29,20 @@ export class ContactFormComponent {
 
   onSubmit() {
     if (this.contactForm.valid) {
+    this.submitLoader = true;
+
       emailjs
       .send(this.serviceID, this.templateID, this.contactForm.getRawValue(), this.publicKey)
       .then(
         (response) => {
           console.log('Email sent successfully!', response.status, response.text);
           this.contactForm.reset();
+          this.submitLoader = false;
           alert('Email sent successfully!');
         },
         (error) => {
           console.error('Failed to send email.', error);
+          this.submitLoader = false;
           alert('Failed to send email. Please try again later.');
         }
       );

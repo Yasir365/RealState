@@ -54,52 +54,13 @@ p {
 }
 
 .backgroundImage {
-    background-image: url(/assets/images/background.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: linear-gradient(to bottom , #708c693b, white);
     width: 100%;
     height: 100vh;
     position: relative;
     z-index: 1;
     bottom: 0;
 }
-
-.comming-soon {
-    .image-wrapper {
-        height: 260px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid var(--secondary-gray);
-        background-color: var(--white);
-        border-radius: 20px;
-
-        h1 {
-            font-size: 5rem;
-            font-weight: 800;
-            width: 100%;
-            text-align: center;
-            color: var(--secondary-orange);
-            font-family: "torque", sans-serif;
-            word-spacing: 6px;
-            letter-spacing: 8px;
-            text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-        }
-    }
-}
-
-@media screen and (max-width: 525px) {
-    .comming-soon .image-wrapper h1 {
-        font-size: 2rem;
-    }
-
-
-}
-
-
-
 
 
 
@@ -249,21 +210,21 @@ p {
 
 
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .card {
         flex: 1 1 calc(45% - 2rem);
         max-width: calc(45% - 2rem);
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .hero p {
         width: 100%;
     }
 
-    .card,
-    .card3,
-    .card2 {
+    .page-section .card-wrapper .card,
+    .page-section .card-wrapper .card3,
+    .page-section .card-wrapper .card2 {
         flex: 1 1 calc(100% - 2rem);
         max-width: calc(100% - 2rem);
     }

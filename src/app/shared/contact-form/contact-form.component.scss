@@ -1,6 +1,6 @@
 .contact-wrapper {
     position: relative;
-    background-color: #1F92F6;
+    background-color: var(--primary-dark);
     background-image: url('/assets/images/balls.png');
     background-size: cover;
     border-radius: 40px;
@@ -70,7 +70,7 @@
             border-radius: 99px 99px 99px 99px;
             opacity: 0px;
             text-align: center;
-            background-color: var(--secondary-orange);
+            background-color: var(--secondary-green);
             color: var(--white);
         }
 
