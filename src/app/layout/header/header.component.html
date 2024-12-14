@@ -1,53 +1,90 @@
 <header>
-    <nav class="navbar navbar-expand-lg py-4">
+    <nav class="navbar navbar-expand-lg pt-2">
         <div class="container-fluid">
             <a routerLink="/" class="logo-container">
-                <img class="image-flude navbar-brand" src="/assets/images/logo.png" alt="logo">
+                <img class="image-flude navbar-brand" src="/assets/images/logo.webp" alt="logo">
             </a>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" >
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav navbar-nav2  ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" routerLink="/index" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navbarContent">Home</a>
+                        <a class="nav-link" routerLink="/index" routerLinkActive="active" data-bs-toggle="collapse"
+                            data-bs-target="#navbarContent">Home</a>
                     </li>
-                    <li class="nav-item" >
-                        <a class="nav-link" routerLink="/about-us" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navbarContent">About Us </a>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/about-us" routerLinkActive="active" data-bs-toggle="collapse"
+                            data-bs-target="#navbarContent">About Us </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLinkActive="active">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" routerLinkActive="active">
                             Features
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" routerLink="/tokenomics" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navbarContent">Tokenomics </a>
+                            <a class="dropdown-item" routerLink="/tokenomics" routerLinkActive="active"
+                                data-bs-toggle="collapse" data-bs-target="#navbarContent">Tokenomics </a>
                             <hr class="mt-2 mb-2">
-                            <a class="dropdown-item" routerLink="/token-commitment" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navbarContent">Token Commitment</a>
+                            <a class="dropdown-item" routerLink="/token-commitment" routerLinkActive="active"
+                                data-bs-toggle="collapse" data-bs-target="#navbarContent">Token Commitment</a>
                             <hr class="mt-2 mb-2">
-                            <a class="dropdown-item" routerLink="/governance" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navbarContent">Governance</a>
+                            <a class="dropdown-item" routerLink="/governance" routerLinkActive="active"
+                                data-bs-toggle="collapse" data-bs-target="#navbarContent">Governance</a>
                         </div>
                     </li>
-                    <li class="nav-item" >
-                        <a class="nav-link" routerLink="/community" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navbarContent">Community</a>
-                    </li>
-                    <li class="nav-item" >
-                        <a class="nav-link" routerLink="/contact-us" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navbarContent">Contact Us</a>
-                    </li>
-                    
-                </ul>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" routerLink="/vote" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navbarContent">Vote</a>
+                        <a class="nav-link" routerLink="/community" routerLinkActive="active" data-bs-toggle="collapse"
+                            data-bs-target="#navbarContent">Community</a>
                     </li>
-                    <li class="nav-item" >
-                        <a class="nav-link" routerLink="/timeline" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navbarContent">Timeline</a>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/contact-us" routerLinkActive="active" data-bs-toggle="collapse"
+                            data-bs-target="#navbarContent">Contact Us</a>
                     </li>
-                    <li class="nav-item" >
-                        <a class="nav-link" routerLink="/post" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navbarContent">Post</a>
-                    </li>
+
+                </ul>
+                <ul class="d-flex gap-2 navbar-nav2 ms-auto mb-2 mb-lg-0">
+                    <div class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" routerLinkActive="active">
+                            Language
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarContent">English
+                            </a>
+                            <hr class="mt-2 mb-2">
+                            <a class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarContent">Hindi
+                            </a>
+                        </div>
+                    </div>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
+
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>

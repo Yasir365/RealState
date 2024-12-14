@@ -31,7 +31,7 @@ a {
     line-height: 48px;
     font-family: "torque", sans-serif;
     word-spacing: 6px;
-    letter-spacing: 6px;
+    text-transform: uppercase;
 }
 
 
@@ -45,82 +45,75 @@ a {
     justify-content: center;
     align-items: center;
     position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 500px;
+        height: 350px;
+        background: url("/assets/images/globe.gif");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 1;
+        z-index: -1;
+    }
+
+    .title {
+        font-size: 5rem;
+        font-weight: 800;
+        width: 100%;
+        text-align: center;
+        color: var(--primary-dark);
+        font-family: "torque", sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+    }
+
+    .sub-title {
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-align: center;
+        color: var(--primary-dark);
+        font-family: "graphik", sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+    }
+
+    .options {
+        font-size: 1.6rem;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        font-family: "graphik", sans-serif;
+        color: var(--primary-dark);
+        text-transform: uppercase;
+
+        .option1,
+        .option3 {
+            color: var(--secondary-orange);
+        }
+
+        .option2 {
+            color: var(--primary-dark);
+        }
+
+    }
+
+    .description {
+        font-size: 1rem;
+        line-height: 28px;
+        text-align: left;
+        text-align: center;
+        color: var(--black);
+    }
+
 }
 
-// .hero::before {
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background: url("/assets/images/globe.gif");
-//     background-position: top right;
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     opacity: 0.4;
-//     z-index: 700;
-// }
 
-.hero .title {
-    font-size: 5rem;
-    font-weight: 800;
-    width: 100%;
-    text-align: center;
-    color: var(--primary-dark);
-    // position: relative;
-    // z-index: 1000;
-    font-family: "torque", sans-serif;
-    word-spacing: 6px;
-    letter-spacing: 8px;
-    margin-bottom: 3rem;
-}
-
-.hero .sub-title {
-    font-size: 1.6rem;
-    font-weight: 600;
-    text-align: center;
-    color: var(--primary-dark);
-    // position: relative;
-    // z-index: 1000;
-    font-family: "relatta", sans-serif;
-    word-spacing: 2px;
-    letter-spacing: 8px;
-}
-
-.hero .options {
-    font-size: 1.6rem;
-    font-weight: 800;
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    // position: relative;
-    // z-index: 1000;
-    font-family: "relatta", sans-serif;
-    word-spacing: 2px;
-    letter-spacing: 8px;
-    color: var(--primary-dark);
-}
-
-.hero .options .option1,
-.hero .options .option3 {
-    color: var(--secondary-orange);
-}
-
-.hero .options .option2 {
-    color: var(--primary-dark);
-}
-
-.hero .description {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-    text-align: center;
-    color: #000;
-    position: relative;
-    z-index: 950;
-}
 
 
 
@@ -128,47 +121,26 @@ a {
 /* About section */
 .about .wrapper {
     border: 1px solid silver;
-    background-color: #fff;
+    background-color: var(--white);
     padding: 2rem;
     border-radius: 20px;
 }
 
 .about .sub-heading {
-    color: #000;
+    color: var(--black);
 }
 
-.about .description {
+.about .card-header {
+    padding: 10px 16px;
     cursor: pointer;
-    position: relative;
-    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
-    padding: 1rem 3rem 1rem 1rem;
-    border-radius: 6px;
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    color: #000;
+}
+
+.about .card-body {
     text-align: justify;
 }
 
-.about .description:hover {
-    white-space: normal;
-    overflow: visible;
-}
-
-.about i{
-    border-radius: 100px;
-    padding: 4px 5px;
-    border: 1px solid var(--secondary-green);
-    position: absolute;
-    right: 8px;
-    top: 15px;
-}
-
-.about .description:hover i{
-    background-color: var(--secondary-green);
-    color: var(--white);
-    transform: rotate(180deg);
+.about video {
+    border-radius: 6px;
 }
 
 
@@ -206,8 +178,7 @@ a {
     font-size: 1.7rem;
     font-weight: 600;
     text-align: left;
-    font-family: "relatta", sans-serif;
-    letter-spacing: 4px;
+    font-family: "graphik", sans-serif;
 }
 
 .tokenCommitment .description {
@@ -240,53 +211,62 @@ a {
 
 .community .description {
     font-size: 16px;
-    // font-weight: 400;
     line-height: 29.25px;
     text-align: center;
 
 }
 
 @media screen and (max-width: 992px) {
-    .hero .title {
-        font-size: 3rem;
+    .hero {
+
+        .title {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .sub-title {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+        }
+
+        .options {
+            font-size: 1.4rem;
+        }
+
+        .description {
+            font-size: 1rem;
+        }
     }
 
-    .hero .sub-title {
-        font-size: 1.4rem;
-        word-spacing: 2px;
-        letter-spacing: 8px;
-    }
-
-    .hero .options {
-        font-size: 1.4rem;
-        word-spacing: 2px;
-        letter-spacing: 8px;
-    }
-
-    .hero .description {
-        font-size: 1rem;
-    }
 
 }
 
 @media screen and (max-width: 525px) {
-    .hero .title {
-        font-size: 1.7rem;
+    .hero {
+
+        &::before {
+            top: 0;
+            right: 0;
+            width: 500px;
+            height: 350px;
+        }
+
+        .title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .sub-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .options {
+            font-size: 1.3rem;
+        }
     }
 
-    .hero .sub-title {
-        font-size: 1.3rem;
-        word-spacing: 2px;
-        letter-spacing: 4px;
-    }
-
-    .hero .options {
-        font-size: 1rem;
-        word-spacing: 2px;
-        letter-spacing: 4px;
-    }
-
-    .tokenCommitment .description{
+    .tokenCommitment .description {
         width: 100%;
         margin-bottom: 1rem;
     }
