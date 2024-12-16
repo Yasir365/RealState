@@ -63,7 +63,6 @@
             color: #475569;
         }
 
-
         .socialIcon {
             display: flex;
             gap: 12px;
@@ -88,6 +87,15 @@
 
         }
 
+        .links{
+            cursor: pointer;
+        }
+
+        .links.active,
+        .links:hover {
+            color: var(--secondary-green);
+            border-bottom: 1px solid #000;
+        }
     }
 
     .copyrights {
