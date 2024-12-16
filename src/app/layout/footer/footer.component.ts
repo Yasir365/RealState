@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-footer',
@@ -11,4 +12,10 @@ import { RouterModule } from '@angular/router';
 })
 export class FooterComponent {
 
+  constructor(private toastr: ToastrService) { }
+
+  commingSoon() {
+    this.toastr.success("COMING SOON");
+
+  }
 }
