@@ -23,15 +23,17 @@ a {
     text-align: center;
     cursor: pointer;
     opacity: 0.8;
+
+    &:hover {
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+
     i {
         font-size: 13px;
         transform: rotate(90deg);
     }
-}
 
-.readmore:hover {
-    opacity: 1;
-    transition: all 0.3s ease;
 }
 
 .main-heading {
@@ -84,10 +86,11 @@ a {
 
     .sub-title {
         font-size: 1.6rem;
-        font-weight: 600;
+        font-weight: 700;
         text-align: center;
         color: var(--primary-dark);
         font-family: "graphik", sans-serif;
+        font-family: 'HandoTrial', sans-serif;
         text-transform: uppercase;
         margin-bottom: 3rem;
     }
@@ -129,36 +132,34 @@ a {
 
 
 /* About section */
-.about .wrapper {
-    box-shadow: 0 0 4px rgb(0 0 0 / 25%);
-    background-color: var(--white);
-    padding: 2rem;
-    border-radius: 20px;
-}
+.about {
+    .wrapper {
+        box-shadow: 0 0 4px rgb(0 0 0 / 25%);
+        background-color: var(--white);
+        padding: 2rem;
+        border-radius: 20px;
+    }
 
-.about .sub-heading {
-    color: var(--black);
-}
+    .card {
+        background: #fff;
+        border: none;
+        box-shadow: 0 0 4px rgb(0 0 0 / 25%);
 
-.about .card {
-    background: #fff;
-    border: none;
-    box-shadow: 0 0 4px rgb(0 0 0 / 25%);
-}
+        .card-header {
+            padding: 10px 16px;
+            cursor: pointer;
+            border: none;
+        }
 
-.about .card-header {
-    padding: 10px 16px;
-    cursor: pointer;
-    border: none;
-    // background: var(--secondary-light);
-}
+        .card-body {
+            text-align: justify;
+        }
+    }
 
-.about .card-body {
-    text-align: justify;
-}
+    video {
+        border-radius: 6px;
+    }
 
-.about video {
-    border-radius: 6px;
 }
 
 
@@ -167,45 +168,40 @@ a {
 
 
 /* TOKEN COMMITMENT */
-.tokenCommitment .description {
-    width: 100%;
-    height: 48px;
-    font-size: 15.88px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-}
+.tokenCommitment {
+    .tokenImg {
+        width: 309.92px;
+        height: 288.44px;
+    }
 
-.tokenCommitment .tokenImg {
-    width: 309.92px;
-    height: 288.44px;
-}
+    .card-wrapper {
+        .icon-wrapper {
+            width: 65px;
+            height: 65px;
 
-.tokenCommitment .icon-wrapper {
-    width: 65px;
-    height: 65px;
-}
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
 
-.tokenCommitment .icon-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+        .title {
+            font-size: 1.7rem;
+            font-weight: 600;
+            text-align: left;
+            font-family: "graphik", sans-serif;
+        }
 
-.tokenCommitment .title {
-    font-size: 1.7rem;
-    font-weight: 600;
-    text-align: left;
-    font-family: "graphik", sans-serif;
-}
-
-.tokenCommitment .description {
-    width: 70%;
-    height: 117px;
-    max-width: 448px;
-    text-align: left;
-    gap: 0px;
-    color: #475569;
+        .description {
+            width: 70%;
+            height: 117px;
+            max-width: 448px;
+            text-align: left;
+            gap: 0px;
+            color: #475569;
+        }
+    }
 }
 
 
