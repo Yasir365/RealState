@@ -73,21 +73,33 @@
                 transition: all 0.3s ease;
             }
 
-            img {
-                width: 28px;
-                height: 26px;
-                transition: all 0.3s ease;
+
+            i:hover {
+                transform: translateY(-3px) scale(1.3);
             }
 
-            i:hover,
-            img:hover {
-                transform: translateY(-3px);
+            .web {
+                color: #0077b5;
+            }
 
+            .youtube {
+                color: #FF0000;
+            }
+
+            .twitter {
+                color: #000000;
+            }
+
+            .telegram {
+                color: #0088cc;
+            }
+
+            .discord {
+                color: #5865F2;
             }
 
         }
 
-        /* Links Container */
         .animated-links {
             display: flex;
             flex-direction: column;
