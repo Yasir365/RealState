@@ -68,6 +68,7 @@ a {
         background-size: contain;
         opacity: 1;
         z-index: 1;
+        filter: hue-rotate(45deg);
     }
 
     .content {
@@ -126,6 +127,16 @@ a {
         color: var(--black);
     }
 
+    ::ng-deep .owl-carousel {
+        .owl-item {
+
+            img {
+                border-radius: 30px;
+                height: 200px;
+            }
+        }
+    }
+
 }
 
 
@@ -136,7 +147,7 @@ a {
 /* About section */
 .about {
     .wrapper {
-        box-shadow: 0 0 4px rgb(0 0 0 / 25%);
+        box-shadow: 0 0 26px 0 #0000002b;
         background-color: var(--white);
         padding: 2rem;
         border-radius: 20px;
@@ -145,7 +156,7 @@ a {
     .card {
         background: #fff;
         border: none;
-        box-shadow: 0 0 4px rgb(0 0 0 / 25%);
+        box-shadow: 0 0 26px 0 #0000002b;
 
         .card-header {
             padding: 10px 16px;

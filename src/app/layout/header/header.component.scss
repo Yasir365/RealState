@@ -1,5 +1,6 @@
 header {
     position: relative;
+    z-index: 1000;
 }
 
 header .navbar {
@@ -17,12 +18,12 @@ header .navbar img {
 }
 
 header .navbar .navbar-toggler:focus {
-    border: 2px solid var(--secondary-dark);
+    border: 2px solid var(--secondary-green);
     box-shadow: none;
 }
 
 header .navbar .navbar-toggler i {
-    color: var(--secondary-dark);
+    color: var(--secondary-green);
 }
 
 header .navbar .navbar-nav {
@@ -34,8 +35,7 @@ header .navbar .navbar-nav {
     justify-content: center;
     gap: 10px;
     align-items: center;
-    box-shadow: 0 0 5px rgb(0 0 0 /25%);
-    transform: translateX(20px);
+    box-shadow: 0 0 26px 0 #0000002b;
 }
 
 header .navbar .navbar-nav .nav-item a {
@@ -47,7 +47,7 @@ header .navbar .navbar-nav .nav-item a {
 }
 
 header .navbar .navbar-nav .nav-item a.active::after {
-    border-bottom: 1px solid var(--secondary-dark);
+    border-bottom: 1px solid var(--secondary-green);
     padding: 7px 12px;
     content: '';
     position: absolute;
@@ -55,7 +55,7 @@ header .navbar .navbar-nav .nav-item a.active::after {
     left: 4px;
     width: 90%;
     height: 1px;
-    border-bottom: 2px solid var(--secondary-dark);
+    border-bottom: 2px solid var(--secondary-green);
 }
 
 header .navbar .navbar-nav .dropdown .dropdown-item {
@@ -74,7 +74,7 @@ header .navbar .navbar-nav .dropdown .dropdown-menu {
 header .navbar .navbar-nav .dropdown .dropdown-item.active {
     border: none;
     border-radius: 0;
-    background-color: var(--secondary-light);
+    background-color: var(--secondary-gray);
 }
 
 header .navbar .phone-number i,
@@ -102,7 +102,7 @@ header .navbar .phone-number a:hover {
     }
 
     header #navbarContent {
-        box-shadow: 0 0 5px rgb(0 0 0 /25%);
+        box-shadow: 0 0 26px 0 #0000002b;
         background-color: var(--white);
         border-radius: 12px;
         padding: 16px 30px;
@@ -116,12 +116,11 @@ header .navbar .phone-number a:hover {
         box-shadow: none;
         gap: 0;
         padding: 0;
-        transform: translateX(0);
     }
 
     header .navbar .navbar-nav .nav-item {
         width: 100%;
-        border-bottom: 1px solid var(--secondary-light);
+        border-bottom: 1px solid var(--secondary-gray);
     }
 
     header .navbar .navbar-nav .nav-item a {
@@ -133,7 +132,7 @@ header .navbar .phone-number a:hover {
     header .navbar .navbar-nav .nav-item a.active {
         border-bottom: none;
         border-radius: 0;
-        background-color: var(--secondary-light);
+        background-color: var(--secondary-gray);
     }
 
     header .navbar .navbar-nav .dropdown .dropdown-item {
@@ -154,7 +153,7 @@ header .navbar .phone-number a:hover {
     header .navbar .navbar-nav .dropdown .dropdown-item.active {
         border: none;
         border-radius: 0;
-        background-color: var(--secondary-light);
+        background-color: var(--secondary-gray);
     }
 
     header .navbar .navbar-nav2 {
@@ -165,7 +164,7 @@ header .navbar .phone-number a:hover {
         a {
             padding: 7px 12px;
             width: 100%;
-            border-bottom: 1px solid var(--secondary-light);
+            border-bottom: 1px solid var(--secondary-gray);
         }
     }
 
