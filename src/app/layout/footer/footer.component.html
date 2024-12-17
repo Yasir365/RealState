@@ -27,31 +27,34 @@
             </div>
             <div class="col-lg-4 h-100">
                 <div class="d-lg-flex gap-5 justify-content-end">
-                    <div class="d-flex flex-column">
-                        <div class="links" routerLink="/home" routerLinkActive="active">Home</div>
-                        <div class="links" routerLink="/tokenomics" routerLinkActive="active">Tokenomics</div>
-                        <div class="links" routerLink="/token-commitment" routerLinkActive="active">Token Commitment</div>
-                        <div class="links" routerLink="/governance" routerLinkActive="active">Governance</div>
-                        <div class="links" routerLink="/community">Community</div>
-                        <div class="my-lg-3 my-0" ></div>
-                        <div class="links" routerLink="/terms-of-use" routerLinkActive="active" (click)="commingSoon()">Terms of Use</div>
-                        <div class="links" routerLink="privacy-policy" routerLinkActive="active" (click)="commingSoon()">privacy policy</div>
+                    <div class="d-flex flex-column animated-links">
+                        <a class="links" routerLink="/home">Home</a>
+                        <a class="links" routerLink="/tokenomics">Tokenomics</a>
+                        <a class="links" routerLink="/token-commitment">Token Commitment</a>
+                        <a class="links" routerLink="/governance">Governance</a>
+                        <a class="links" routerLink="/community">Community</a>
+                        <a class="links mt-lg-3 mt-0" routerLink="/terms-of-use" (click)="commingSoon()">Terms of Use</a>
+                        <a class="links" routerLink="/privacy-policy" (click)="commingSoon()">Privacy Policy</a>
                     </div>
-                    <div class="d-flex flex-column">
-                        <div class="links" routerLink="/faqs" routerLinkActive="active" (click)="commingSoon()">FAQs</div>
-                        <div class="links" routerLink="/feedback" routerLinkActive="active" (click)="commingSoon()">Feedback</div>
-                        <div class="links" routerLink="/roadmap" routerLinkActive="active" (click)="commingSoon()">Roadmap</div>
-                        <div class="links" routerLink="/timeline" routerLinkActive="active" (click)="commingSoon()">Timeline</div>
-                        <div class="links" routerLink="/blog" routerLinkActive="active" (click)="commingSoon()">Blog</div>
-                        <div class="links" routerLink="/team" routerLinkActive="active" (click)="commingSoon()">Team</div>
-                        <div class="links" routerLink="/careers" routerLinkActive="active" (click)="commingSoon()">Careers</div>
+                
+                    <div class="d-flex flex-column animated-links">
+                        <a class="links" routerLink="/faqs" (click)="commingSoon()">FAQs</a>
+                        <a class="links" routerLink="/feedback" (click)="commingSoon()">Feedback</a>
+                        <a class="links" routerLink="/roadmap" (click)="commingSoon()">Roadmap</a>
+                        <a class="links" routerLink="/timeline" (click)="commingSoon()">Timeline</a>
+                        <a class="links" routerLink="/blog" (click)="commingSoon()">Blog</a>
+                        <a class="links" routerLink="/team" (click)="commingSoon()">Team</a>
+                        <a class="links" routerLink="/careers" (click)="commingSoon()">Careers</a>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>
     <div class="copyrights">
-        <p class="discliamer">Discliamer</p>
-        <p>&copy; 2024 real.io | All rights reserved.</p>
+        <div class="container d-flex justify-content-between flex-wrap">
+            <p class="discliamer mt-3 mb-0">Discliamer</p>
+            <p class=" mt-3 mb-0">&copy; 2024 real.io | All rights reserved.</p>
+        </div>
     </div>
 </footer>

@@ -10,7 +10,7 @@
 
     .asd {
         position: absolute;
-        bottom: 18rem;
+        bottom: 20rem;
         left: 0;
         z-index: -1;
         width: 100%;
@@ -87,15 +87,51 @@
 
         }
 
-        .links {
-            cursor: pointer;
+        /* Links Container */
+        .animated-links {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .links {
+                position: relative;
+                font-size: 16px;
+                font-weight: 500;
+                text-decoration: none;
+                color: var(--black);
+                transition: color 0.3s ease, transform 0.3s ease;
+                cursor: pointer;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 2px;
+                    width: 0;
+                    background-color: var(--secondary-dark, #4CAF50);
+                    /* Default green if no custom variable */
+                    transition: width 0.3s ease-in-out;
+                }
+            }
         }
 
-        .links.active,
-        .links:hover {
-            color: var(--secondary-dark);
-            border-bottom: 1px solid #000;
+
+        .links:hover::after,
+        .links.active::after {
+            width: 100%;
         }
+
+        .links:hover {
+            color: var(--secondary-dark, #4CAF50);
+            transform: translateX(5px);
+        }
+
+        .links.active {
+            font-weight: bold;
+            color: var(--secondary-dark, #4CAF50);
+        }
+
     }
 
     .copyrights {
@@ -103,8 +139,6 @@
         margin-top: 1rem;
         border-top: 1px solid #49494963;
         font-size: 14px;
-        display: flex;
-        justify-content: space-between;
 
         .discliamer {
             cursor: pointer;
