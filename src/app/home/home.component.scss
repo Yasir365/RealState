@@ -53,9 +53,6 @@ a {
 /* Hero section */
 .hero {
     min-height: 82vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
 
     &::before {
@@ -71,6 +68,12 @@ a {
         background-size: contain;
         opacity: 1;
         z-index: 1;
+    }
+
+    .content {
+        position: relative;
+        padding-top: 5rem;
+        z-index: 5;
     }
 
     .title {
@@ -233,6 +236,14 @@ a {
 @media screen and (max-width: 992px) {
     .hero {
 
+        .content {
+            padding-top: 0;
+        }
+
+        &::before {
+            display: none;
+        }
+
         .title {
             font-size: 3rem;
             margin-bottom: 2rem;
@@ -250,6 +261,10 @@ a {
         .description {
             font-size: 1rem;
         }
+
+        .globe img {
+            width: 100%;
+        }
     }
 
 
@@ -257,13 +272,6 @@ a {
 
 @media screen and (max-width: 525px) {
     .hero {
-
-        &::before {
-            top: 0;
-            right: 0;
-            width: 500px;
-            height: 350px;
-        }
 
         .title {
             font-size: 2rem;
@@ -280,7 +288,7 @@ a {
         }
     }
 
-    .tokenCommitment .description {
+    .tokenCommitment .card-wrapper .description {
         width: 100%;
         margin-bottom: 1rem;
     }
