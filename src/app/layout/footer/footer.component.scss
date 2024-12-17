@@ -35,7 +35,7 @@
             transform: translateX(-50%);
             z-index: 1000;
             border-radius: 100%;
-            outline: 1px dashed var(--secondary-orange);
+            outline: 1px dashed var(--secondary-medium);
             border: 1px solid var(--primary-dark);
             background-color: var(--white);
             width: 250px;
@@ -87,13 +87,13 @@
 
         }
 
-        .links{
+        .links {
             cursor: pointer;
         }
 
         .links.active,
         .links:hover {
-            color: var(--secondary-green);
+            color: var(--secondary-dark);
             border-bottom: 1px solid #000;
         }
     }

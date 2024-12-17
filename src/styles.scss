@@ -8,13 +8,13 @@
 
 :root {
     /* Primary Colors */
-    --primary-dark: #022457;
-    --primary-light: #dbe0d6;
+    --primary-dark: #001F54;
+    --primary-light: #EBEBEB;
 
     /* Secondary Colors */
-    --secondary-green: #022457;
-    --secondary-orange: #b87d4b;
-    --secondary-gray: #bdd3ce;
+    --secondary-dark: #034078;
+    --secondary-medium: #A3CEF1;
+    --secondary-light: #E2EAFC;
 
     /* Additional Colors */
     --black: #000000;
@@ -69,7 +69,7 @@ p {
             font-weight: 800;
             width: 100%;
             text-align: center;
-            color: var(--secondary-orange);
+            color: var(--secondary-medium);
             font-family: "torque", sans-serif;
             word-spacing: 6px;
             letter-spacing: 2px;
