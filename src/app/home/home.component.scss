@@ -156,21 +156,29 @@ a {
         border-radius: 20px;
     }
 
-    .card {
+    .accordion-item {
         background: #fff;
         border: none;
         box-shadow: 0 0 26px 0 #0000002b;
 
-        .card-header {
-            padding: 10px 16px;
+        .accordion-header {
             cursor: pointer;
             border: none;
+
+            .accordion-button {
+                padding: 10px 16px;
+            }
         }
 
-        .card-body {
+        .accordion-body {
             text-align: justify;
+
+            p {
+                margin: 0;
+            }
         }
     }
+
 
     video {
         border-radius: 6px;
