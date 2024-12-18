@@ -13,10 +13,14 @@
                 </p>
                 <div class="socialIcon">
                     <a href="https://thisisreal.io/" target="_blank"><i class="fa-solid fa-globe web"></i></a>
-                    <a href="https://www.youtube.com/@thisisreal_io" target="_blank"><i class="fa-brands fa-youtube youtube"></i></a>
-                    <a href="https://x.com/thisisreal_io" target="_blank"><i class="fa-brands fa-x-twitter twitter"></i></a>
-                    <a href="https://t.me/+iS3SECPvXlAxN2Y5" target="_blank"><i class="fa-brands fa-telegram telegram"></i></a>
-                    <a href="https://discord.com/invite/dgMF7CAxvg" target="_blank"><i class="fa-brands fa-discord discord"></i></a>
+                    <a href="https://www.youtube.com/@thisisreal_io" target="_blank"><i
+                            class="fa-brands fa-youtube youtube"></i></a>
+                    <a href="https://x.com/thisisreal_io" target="_blank"><i
+                            class="fa-brands fa-x-twitter twitter"></i></a>
+                    <a href="https://t.me/+iS3SECPvXlAxN2Y5" target="_blank"><i
+                            class="fa-brands fa-telegram telegram"></i></a>
+                    <a href="https://discord.com/invite/dgMF7CAxvg" target="_blank"><i
+                            class="fa-brands fa-discord discord"></i></a>
                 </div>
                 <p class="description">
                     Have questions or feedback?
@@ -31,10 +35,11 @@
                         <a class="links" routerLink="/token-commitment">Token Commitment</a>
                         <a class="links" routerLink="/governance">Governance</a>
                         <a class="links" routerLink="/community">Community</a>
-                        <a class="links mt-lg-3 mt-0" routerLink="/terms-of-use" (click)="commingSoon()">Terms of Use</a>
+                        <a class="links mt-lg-3 mt-0" routerLink="/terms-of-use" (click)="commingSoon()">Terms of
+                            Use</a>
                         <a class="links" routerLink="/privacy-policy" (click)="commingSoon()">Privacy Policy</a>
                     </div>
-                
+
                     <div class="d-flex flex-column animated-links">
                         <a class="links" routerLink="/faqs" (click)="commingSoon()">FAQs</a>
                         <a class="links" routerLink="/feedback" (click)="commingSoon()">Feedback</a>
@@ -45,14 +50,42 @@
                         <a class="links" routerLink="/careers" (click)="commingSoon()">Careers</a>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
     <div class="copyrights">
         <div class="container d-flex justify-content-between flex-wrap">
-            <p class="discliamer mt-3 mb-0">Discliamer</p>
+            <p class="discliamer mt-3 mb-0" data-bs-toggle="modal" data-bs-target="#disclaimerModal">Discliamer</p>
             <p class=" mt-3 mb-0">&copy; 2024 real.io | All rights reserved.</p>
         </div>
     </div>
 </footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="disclaimerModal" tabindex="-1" aria-labelledby="disclaimerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">Discliamer</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="m-0 mb-2">
+                    Disclaimer — The information presented on this website is for illustrative purposes only and does
+                    not constitute an offer to buy or sell, or a solicitation of an offer to buy or sell, any tokens in
+                    any jurisdiction. This shall not be considered an offer, solicitation, or sale in any jurisdiction
+                    where such actions would be prohibited, illegal, or contrary to applicable laws prior to proper
+                    registration or qualification under the securities laws of that jurisdiction.
+                </p>
+                <p class="m-0">
+                    No representation or warranty, express or implied, is made by the REAL project regarding the
+                    accuracy, reliability, or completeness of the information and opinions provided on this website.
+                    Independent legal and financial advice is strongly recommended before making any decisions based on
+                    the information presented herein.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
