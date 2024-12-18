@@ -12,6 +12,8 @@ import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  activeIndex: number | null = null;
+
   customOptions: OwlOptions = {
     loop: true,
     autoplay: true,
@@ -19,20 +21,17 @@ export class HomeComponent {
     dots: false,
     autoHeight: true,
     autoWidth: true,
-    margin: 20,
     autoplayTimeout: 1500,
+    margin: 10,
     autoplayHoverPause: false,
     responsive: {
       0: {
         items: 2,
       },
-      768: {
+      525: {
         items: 3,
       },
-      992: {
-        items: 3,
-      }
-    }
+    },
   }
 
   carouselData = [
@@ -89,7 +88,6 @@ export class HomeComponent {
     },
   ];
 
-  activeIndex: number | null = null;
 
   toggleAccordion(index: number): void {
     this.activeIndex = this.activeIndex === index ? null : index;
