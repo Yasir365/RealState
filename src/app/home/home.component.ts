@@ -19,7 +19,9 @@ export class HomeComponent {
     dots: false,
     autoHeight: true,
     autoWidth: true,
-    stagePadding: 10,
+    margin: 20,
+    autoplayTimeout: 1500,
+    autoplayHoverPause: false,
     responsive: {
       0: {
         items: 2,
@@ -36,31 +38,31 @@ export class HomeComponent {
   carouselData = [
     {
       id: '0',
-      image: '/assets/images/carousel/1.jpg'
+      image: '/assets/images/carousel/1.webp'
     },
     {
       id: '1',
-      image: '/assets/images/carousel/2.jpg'
+      image: '/assets/images/carousel/2.webp'
     },
     {
       id: '2',
-      image: '/assets/images/carousel/3.jpg'
+      image: '/assets/images/carousel/3.webp'
     },
     {
       id: '3',
-      image: '/assets/images/carousel/4.jpg'
+      image: '/assets/images/carousel/4.webp'
     },
     {
       id: '4',
-      image: '/assets/images/carousel/5.jpg'
+      image: '/assets/images/carousel/5.webp'
     },
     {
       id: '5',
-      image: '/assets/images/carousel/6.jpg'
+      image: '/assets/images/carousel/6.webp'
     },
     {
       id: '6',
-      image: '/assets/images/carousel/7.jpg'
+      image: '/assets/images/carousel/7.webp'
     },
   ]
 

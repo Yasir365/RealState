@@ -128,11 +128,14 @@ a {
     }
 
     ::ng-deep .owl-carousel {
+        margin-top: 20px;
+
         .owl-item {
 
             img {
-                border-radius: 30px;
+                border-radius: 100%;
                 height: 200px;
+                width: 200px;
             }
         }
     }
