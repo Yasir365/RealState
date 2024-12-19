@@ -46,6 +46,11 @@ a {
     text-transform: uppercase;
 }
 
+.bg-light {
+    // background: linear-gradient(to right, #E9E9FF, #fff);
+    background-color: #e9e9ff95 !important;
+}
+
 
 
 
@@ -79,7 +84,7 @@ a {
     }
 
     .title {
-        font-size: 5rem;
+        font-size: 4.5rem;
         font-weight: 800;
         width: 100%;
         text-align: center;
@@ -96,7 +101,9 @@ a {
         color: var(--primary-dark);
         font-family: "graphik", sans-serif;
         text-transform: uppercase;
+        margin: auto;
         margin-bottom: 3rem;
+        width: 70%;
     }
 
     .options {
@@ -152,8 +159,6 @@ a {
 
 /* About section */
 .about {
-    background: linear-gradient(135deg, #ffffff, #f1f3f4);
-
     .wrapper {
         box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
         ;
@@ -325,6 +330,7 @@ a {
         .sub-title {
             font-size: 1.3rem;
             margin-bottom: 1rem;
+            width: 100%;
         }
 
         .options {
