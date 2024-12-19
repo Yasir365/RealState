@@ -18,12 +18,12 @@ header .navbar img {
 }
 
 header .navbar .navbar-toggler:focus {
-    border: 2px solid var(--secondary-green);
+    border: 2px solid var(--primary-dark);
     box-shadow: none;
 }
 
 header .navbar .navbar-toggler i {
-    color: var(--secondary-green);
+    color: var(--primary-dark);
 }
 
 header .navbar .navbar-nav {
@@ -38,7 +38,12 @@ header .navbar .navbar-nav {
     box-shadow: 0 0 26px 0 #0000002b;
 }
 
-header .navbar .navbar-nav .nav-item a {
+header .navbar-nav2 {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link {
     color: var(--black);
     margin: 4px;
     text-transform: uppercase;
@@ -46,20 +51,12 @@ header .navbar .navbar-nav .nav-item a {
     position: relative;
 }
 
-header .navbar .navbar-nav .nav-item a.active::after {
-    border-bottom: 1px solid var(--secondary-green);
-    padding: 7px 12px;
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 4px;
-    width: 90%;
-    height: 1px;
-    border-bottom: 2px solid var(--secondary-green);
-}
-
-header .navbar .navbar-nav .dropdown .dropdown-item {
-    background-color: transparent;
+header .navbar .navbar-nav .nav-item .nav-link.active {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    border-radius: 100px;
+    padding: 2px 10px;
+    box-shadow: 0 0 6px 1px #00000044;
 }
 
 header .navbar .navbar-nav .dropdown .dropdown-menu {
@@ -70,11 +67,22 @@ header .navbar .navbar-nav .dropdown .dropdown-menu {
     left: -66px !important;
 }
 
+header .navbar .navbar-nav .dropdown .dropdown-item {
+    background-color: transparent;
+    padding: 6px 8px;
+    margin: 0;
+    border-bottom: 1px solid var(--primary-dark);
+}
 
-header .navbar .navbar-nav .dropdown .dropdown-item.active {
+header .navbar .navbar-nav .dropdown .dropdown-item:last-child {
+    border-bottom: none;
+}
+
+header .navbar .navbar-nav .dropdown .dropdown-item.active2 {
     border: none;
     border-radius: 0;
-    background-color: var(--secondary-gray);
+    background-color: var(--primary-dark);
+    color: var(--white);
 }
 
 header .navbar .phone-number i,
@@ -120,19 +128,18 @@ header .navbar .phone-number a:hover {
 
     header .navbar .navbar-nav .nav-item {
         width: 100%;
-        border-bottom: 1px solid var(--secondary-gray);
+        border-bottom: 1px solid var(--black);
     }
 
-    header .navbar .navbar-nav .nav-item a {
+    header .navbar .navbar-nav .nav-item .nav-link {
         color: var(--black);
         margin: 0px;
         padding: 7px 12px;
     }
 
-    header .navbar .navbar-nav .nav-item a.active {
-        border-bottom: none;
+    header .navbar .navbar-nav .nav-item .nav-link.active {
         border-radius: 0;
-        background-color: var(--secondary-gray);
+        padding: 6px 10px;
     }
 
     header .navbar .navbar-nav .dropdown .dropdown-item {
@@ -149,13 +156,6 @@ header .navbar .phone-number a:hover {
         display: none;
     }
 
-
-    header .navbar .navbar-nav .dropdown .dropdown-item.active {
-        border: none;
-        border-radius: 0;
-        background-color: var(--secondary-gray);
-    }
-
     header .navbar .navbar-nav2 {
         flex-direction: column;
         gap: 0 !important;
@@ -164,7 +164,6 @@ header .navbar .phone-number a:hover {
         a {
             padding: 7px 12px;
             width: 100%;
-            border-bottom: 1px solid var(--secondary-gray);
         }
     }
 
@@ -175,14 +174,9 @@ header .navbar .phone-number a:hover {
         padding-left: 12px;
         margin: 0;
 
-        hr {
-            display: none;
-        }
-
         .dropdown-item {
             padding: 7px 12px;
             border: none;
-            border-bottom: none !important;
         }
     }
 
