@@ -49,6 +49,7 @@ body {
 
 
 .comming-soon {
+    padding-top: 80px;
     .image-wrapper {
         height: 260px;
         width: 100%;
@@ -58,7 +59,7 @@ body {
         background-color: var(--white);
         box-shadow: 0 0 26px 0 #0000002b;
         border-radius: 20px;
-        margin: 80px auto;
+        // margin: 80px auto;
 
         h1 {
             font-size: 5rem;
@@ -73,10 +74,14 @@ body {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .comming-soon {
+        padding-top: 0;
+    }
+}
+
 @media screen and (max-width: 525px) {
     .comming-soon .image-wrapper h1 {
         font-size: 2rem;
     }
-
-
 }
