@@ -31,6 +31,9 @@ export class HomeComponent {
       525: {
         items: 3,
       },
+      768:{
+        items: 5
+      }
     },
   }
 
