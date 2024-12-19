@@ -35,7 +35,7 @@ header .navbar .navbar-nav {
     justify-content: center;
     gap: 10px;
     align-items: center;
-    box-shadow: 0 0 26px 0 #0000002b;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);;
 }
 
 header .navbar-nav2 {
@@ -110,7 +110,7 @@ header .navbar .phone-number a:hover {
     }
 
     header #navbarContent {
-        box-shadow: 0 0 26px 0 #0000002b;
+        box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);;
         background-color: var(--white);
         border-radius: 12px;
         padding: 16px 30px;

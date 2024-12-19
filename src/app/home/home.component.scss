@@ -152,8 +152,11 @@ a {
 
 /* About section */
 .about {
+    background: linear-gradient(135deg, #ffffff, #f1f3f4);
+
     .wrapper {
-        box-shadow: 0 0 26px 0 #0000002b;
+        box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
+        ;
         background-color: var(--white);
         padding: 2rem;
         border-radius: 20px;
@@ -162,7 +165,8 @@ a {
     .accordion-item {
         background: #fff;
         border: none;
-        box-shadow: 0 0 26px 0 #0000002b;
+        box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
+        ;
 
         .accordion-header {
             cursor: pointer;
@@ -196,6 +200,7 @@ a {
 
 /* TOKEN COMMITMENT */
 .tokenCommitment {
+
     .tokenImg {
         width: 309.92px;
         height: 288.44px;
