@@ -134,6 +134,7 @@ a {
         .owl-item {
             display: flex;
             justify-content: center;
+
             img {
                 border-radius: 100%;
                 height: 200px;
@@ -289,13 +290,14 @@ a {
 
         .globe img {
             width: 100%;
+            filter: hue-rotate(45deg);
         }
 
         ::ng-deep .owl-carousel {
             margin-top: 20px;
-    
+
             .owl-item {
-    
+
                 img {
                     height: 160px;
                     width: 160px;
@@ -326,9 +328,9 @@ a {
 
         ::ng-deep .owl-carousel {
             margin-top: 20px;
-    
+
             .owl-item {
-    
+
                 img {
                     height: 120px;
                     width: 120px;
