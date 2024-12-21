@@ -47,6 +47,10 @@ const routes: Routes = [
     loadComponent: () => import('./post/post.component').then(m => m.PostComponent)
   },
   {
+    path: 'test',
+    loadComponent: () => import('./test/test.component').then(m => m.TestComponent)
+  },
+  {
     path: '**',
     redirectTo: '',
     pathMatch: 'full'

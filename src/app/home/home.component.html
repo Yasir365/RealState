@@ -1,73 +1,73 @@
 <!-- Hero Section -->
-<section class="hero text-center text-gray ">
+<section class="hero text-center text-gray">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-12 mx-auto">
+            <div class="col-lg-8 col-12 mx-auto content">
                 <h1 class="title">Welcome to REAL</h1>
                 <h2 class="sub-title">REAL is a community-driven Real Estate DAO with a deflationary twist!</h2>
-                <h3 class="options mt-3 mt-5 mb-5">
-                    <span class="option1"> REAL Estate. </span>
-                    <span class="option2"> REAL Token. </span>
+                <h3 class="options">
+                    <span class="option1"> REAL Estate </span>
+                    <span class="option2"> REAL Token </span>
                     <span class="option3"> REAL Value </span>
                 </h3>
-                <p class="description"> Our mission is to create a real world use-case on the Ethereum blockchain by tokenizing the real-estate experience in the form of a deflationary crypto token. </p>
+                <p class="description">
+                    Our mission is to create a real world use-case on the Ethereum blockchain by
+                    tokenizing the real-estate experience in the form of a deflationary crypto token.
+                </p>
             </div>
         </div>
+
+        <div class="d-flex justify-content-center d-lg-none d-block pb-5 globe">
+            <img src="/assets/images/globe.gif" alt="">
+        </div>
+
+        <owl-carousel-o [options]="customOptions">
+
+            <ng-container *ngFor="let slide of carouselData">
+                <ng-template class="slide" carouselSlide [id]="slide.id">
+                    <img [src]="slide.image" [alt]="slide.id" [title]="slide.id">
+                </ng-template>
+            </ng-container>
+
+        </owl-carousel-o>
     </div>
 </section>
 
 <!-- About Section -->
-<section class="about bg-light py-5">
+<section class="about bg-light pad">
     <div class="container">
         <div class="wrapper">
             <h2 class="text-center main-heading mb-4">What is REAL</h2>
             <div class="row">
                 <div class="col-lg-6 mb-lg-0 mb-4">
-                    <p class="description">
-                        Welcome to the Real Estate Alliance League, – a community-driven real estate Decentralized
-                        Autonomous Organization or DAO, where you can interact, learn, and contribute to the health
-                        and success of our organization and its community. 
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </p>
-                    <p class="description">
-                        REAL is a deflationary crypto utility token utilizing the Ethereum blockchain technology bringing
-                        the security and transparency of its network to our members. There are no membership fees.
-                        You become a member simply by holding REAL tokens. The more tokens held, the higher your
-                        membership level.
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </p>
-                    <p class="description">
-                        Profits from the token sales are invested into real estate rental properties. The organization then
-                        generates passive income that will continue for the entire lifetime of the property.
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </p>
-                    <p class="description">
-                        This passive income is then used to buy REAL tokens from the open market and eliminate them
-                        with a process called “Token Burn”. This will create a lifetime of buying pressure for the token.
-                        This act will continue to make the membership more exclusive over the years beyond its initial
-                        market cap of 100 million tokens.
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </p>
-                    <p class="description">
-                        Join a transparent, secure, and community-driven project that uses the latest blockchain
-                        technology all while being powered by a supportive and active community.
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </p>
+                    <div class="accordion" id="factionAccordion">
+                        <div class="accordion-item mb-3" *ngFor="let item of factions; let index = index" [id]="'accordionItem' + index" >
+                            <div class="accordion-header d-flex justify-content-between align-items-center" [id]="'heading' + index" >
+                                <div class="accordion-button d-flex align-items-center" [class.collapsed]="activeIndex !== index" type="button"
+                                (click)="toggleAccordion(index)" [attr.aria-expanded]="activeIndex === index" [attr.aria-controls]="'collapse' + index" >
+                                {{ item.name }}
+                                </div>
+                            </div>
+                            <div [id]="'collapse' + index" class="accordion-collapse collapse" [class.show]="activeIndex === index" data-bs-parent="#factionAccordion" >
+                                <div class="accordion-body">
+                                <p>{{ item.description }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="h-100 d-flex ">
-                        <video class="about_video" id="video" loop controls  style="width: 100%; height: auto;" autobuffer="true" 
-                        poster="https://res.cloudinary.com/db8yg1ovm/image/upload/v1733922182/RealState/zmpzy3gaugbue9adcm9l.webp"
-                        >
-                            <source src="/assets/videos/about.mp4" type="video/mp4">
-                        </video>
-                    </div>
+                    <video class="about_video" id="video" loop controls style="width: 100%; height: auto;"
+                        autobuffer="true"
+                        poster="https://res.cloudinary.com/db8yg1ovm/image/upload/v1733922182/RealState/zmpzy3gaugbue9adcm9l.webp">
+                        <source src="/assets/videos/about.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
             <div class="d-flex justify-content-center mt-4">
                 <a routerLink="/about-us" class="readmore">
                     <span>Read More</span>
-                    <img src="/assets/images/SVG_margin.webp" alt="SVG Icon" />
+                    <i class="fa-solid fa-chevron-up"></i>
                 </a>
             </div>
         </div>
@@ -75,12 +75,12 @@
 </section>
 
 <!-- Token Commitment Section -->
-<section class="tokenCommitment text-center py-5">
+<section class="tokenCommitment pad">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center flex-lg-row flex-column">
             <h2 class="main-heading">Simple Attributes to REAL</h2>
             <span class="tokenImg">
-                <img src="/assets/images/tokenimg2.webp" />
+                <img src="/assets/images/component3.png" />
             </span>
         </div>
         <div class="row">
@@ -88,7 +88,7 @@
                 <div class="card-wrapper">
                     <div class="d-flex align-items-center mb-3 gap-4">
                         <div class="icon-wrapper">
-                            <img src="/assets/images/icon1.webp" alt="Community" />
+                            <img src="/assets/images/icon1.png" alt="Community" />
                         </div>
                         <div class="title">
                             No Membership Fee
@@ -104,7 +104,7 @@
                 <div class="card-wrapper">
                     <div class="d-flex align-items-center mb-3 gap-4">
                         <div class="icon-wrapper">
-                            <img src="/assets/images/icon3.webp" alt="Community" />
+                            <img src="/assets/images/icon3.png" alt="Community" />
                         </div>
                         <div class="title">
                             Decentralized Creation
@@ -120,7 +120,7 @@
                 <div class="card-wrapper">
                     <div class="d-flex align-items-center mb-3 gap-4">
                         <div class="icon-wrapper">
-                            <img src="/assets/images/icon3.webp" alt="Community" />
+                            <img src="/assets/images/icon3.png" alt="Community" />
                         </div>
                         <div class="title">
                             Community-Driven
@@ -136,7 +136,7 @@
                 <div class="card-wrapper">
                     <div class="d-flex align-items-center mb-3 gap-4">
                         <div class="icon-wrapper">
-                            <img src="/assets/images/icon2.webp" alt="Community" />
+                            <img src="/assets/images/icon2.png" alt="Community" />
                         </div>
                         <div class="title">
                             Token Mechanism
@@ -148,36 +148,37 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="d-flex justify-content-center">
                 <a routerLink="/token-commitment" class="readmore">
                     <span>Read More</span>
-                    <img src="/assets/images/SVG_margin.webp" alt="SVG Icon" />
+                    <i class="fa-solid fa-chevron-up"></i>
                 </a>
             </div>
-            
+
         </div>
     </div>
 </section>
 
 <!-- Community Section -->
-<section class="community bg-light py-5">
+<section class="community bg-light pad">
     <div class="container">
         <div class="row">
             <h2 class="text-center main-heading">Join Our Community!</h2>
             <div class="col-lg-6 mx-auto">
                 <div class="d-flex flex-column align-items-center ">
-                    <div class="image-wrapper" >
-                        <img src="/assets/images/communiy.webp" />
+                    <div class="image-wrapper">
+                        <img src="/assets/images/communiy.png" />
                     </div>
                     <p class="description">
-                        Whether you're new to crypto, new to real estate, or a seasoned investor, there's a place for you
+                        Whether you're new to crypto, new to real estate, or a seasoned investor, there's a place for
+                        you
                         at REAL. Explore opportunities to contribute to REAL community-driven initiatives.
                     </p>
                     <div class="d-flex justify-content-center">
                         <a routerLink="/community" class="readmore">
                             <span>Read More</span>
-                            <img src="/assets/images/SVG_margin.webp" alt="SVG Icon" />
+                            <i class="fa-solid fa-chevron-up"></i>
                         </a>
                     </div>
                 </div>

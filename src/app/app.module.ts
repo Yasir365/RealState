@@ -5,6 +5,7 @@ import { AppRouting } from './app.routing';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './layout/footer/footer.component';
     BrowserModule,
     AppRouting,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

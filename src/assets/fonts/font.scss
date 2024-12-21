@@ -1,11 +1,3 @@
-/* Relatta Fonts */
-@font-face {
-    src: url(/assets/fonts/Relatta_Saidnolia_Serif.otf);
-    font-family: relatta;
-    font-display: swap;
-}
-
-
 /* Torque Fonts */
 @font-face {
     src: url(/assets/fonts/Torque_Sense.otf);
@@ -83,6 +75,40 @@
     font-family: 'graphik';
     src: url('/assets/fonts/Graphik/Graphik-Black-Trial.otf') format('opentype');
     font-weight: 900; 
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* Hando Trial Fonts */
+@font-face {
+    font-family: 'HandoTrial';
+    src: url('/assets/fonts/hando-trial/HandoTrial-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HandoTrial';
+    src: url('/assets/fonts/hando-trial/HandoTrial-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HandoTrial';
+    src: url('/assets/fonts/hando-trial/HandoTrial-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HandoTrial';
+    src: url('/assets/fonts/hando-trial/HandoTrial-Regular.otf') format('opentype');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
