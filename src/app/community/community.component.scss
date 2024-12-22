@@ -7,11 +7,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     h1 {
         font-size: 3rem;
         margin-bottom: 0.5rem;
     }
+}
+
+.banner2{
+    background: url('/assets/images/stock/6.jpg');
+    color: black;
 }
 
 .about-section {
