@@ -21,7 +21,7 @@ export class HomeComponent {
     dots: false,
     autoHeight: true,
     autoWidth: true,
-    autoplayTimeout: 1500,
+    autoplayTimeout: 2500,
     margin: 10,
     autoplayHoverPause: false,
     responsive: {
@@ -31,7 +31,7 @@ export class HomeComponent {
       525: {
         items: 3,
       },
-      768:{
+      768: {
         items: 5
       }
     },
@@ -89,6 +89,10 @@ export class HomeComponent {
       name: 'Why should you choose REAL?',
       description: 'REAL combines cutting-edge blockchain technology with a community-driven approach, creating an innovative platform backed by active participation and shared goals.',
     },
+    {
+      name: 'What is NOT REAL?',
+      description: 'REAL is not ownership of property, assets, or securities. It does not promise profits, grant access to external assets, or serve as a substitute for real estate ownership. Its sole purpose is to provide DAO membership and participation.'
+    }
   ];
 
 

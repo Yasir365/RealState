@@ -1,4 +1,4 @@
-<section class="contact-wrapper pt-5">
+<section class="contact-wrapper pt-5 pb-5">
   <div class="main-heading mb-4">Be the first to get REAL updates</div>
   <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <div class="row">
@@ -12,12 +12,6 @@
         <input type="email" formControlName="email" placeholder="Enter Email" class="form-control" />
         <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="error">
           Enter a valid email.
-        </div>
-      </div>
-      <div class="col-lg-12">
-        <input type="text" formControlName="country" placeholder="Enter Country" class="form-control" />
-        <div *ngIf="contactForm.get('country')?.invalid && contactForm.get('country')?.touched" class="error">
-          Country is required.
         </div>
       </div>
       <div class="col-12 mt-4">
