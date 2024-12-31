@@ -1,6 +1,6 @@
 /* Torque Fonts */
 @font-face {
-    src: url(/assets/fonts/Torque_Sense.otf);
+    src: url('/assets/fonts/Torque_Sense.otf');
     font-family: torque;
     font-display: swap;
 }
@@ -108,6 +108,19 @@
 @font-face {
     font-family: 'HandoTrial';
     src: url('/assets/fonts/hando-trial/HandoTrial-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+// Monterrat Font
+@font-face {
+    font-family: 'monterrat';
+    src: url('/assets/fonts/montserrat/Montserrat-Medium.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

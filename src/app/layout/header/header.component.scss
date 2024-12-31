@@ -35,12 +35,12 @@ header .navbar .navbar-nav {
     justify-content: center;
     gap: 10px;
     align-items: center;
-    box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
+    ;
 }
 
 header .navbar-nav2 {
-    background-color: transparent !important;
-    box-shadow: none !important;
+    background-color: #d1cffb !important;
 }
 
 header .navbar .navbar-nav .nav-item .nav-link {
@@ -110,7 +110,8 @@ header .navbar .phone-number a:hover {
     }
 
     header #navbarContent {
-        box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);;
+        box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
+        ;
         background-color: var(--white);
         border-radius: 12px;
         padding: 16px 30px;
@@ -124,6 +125,10 @@ header .navbar .phone-number a:hover {
         box-shadow: none;
         gap: 0;
         padding: 0;
+    }
+
+    header .navbar-nav2 {
+        background: transparent !important;
     }
 
     header .navbar .navbar-nav .nav-item {

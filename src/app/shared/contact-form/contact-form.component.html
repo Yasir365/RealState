@@ -3,19 +3,19 @@
   <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <div class="row">
       <div class="col-lg-6 mb-lg-0 mb-4">
-        <input type="text" formControlName="name" placeholder="Enter Name" class="form-control" />
+        <input type="text" formControlName="name" placeholder="Name" class="form-control" />
         <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="error">
           Name is required.
         </div>
       </div>
       <div class="col-lg-6 mb-4">
-        <input type="email" formControlName="email" placeholder="Enter Email" class="form-control" />
+        <input type="email" formControlName="email" placeholder="Email" class="form-control" />
         <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="error">
           Enter a valid email.
         </div>
       </div>
       <div class="col-12 mt-4">
-        <textarea rows="3" formControlName="message" placeholder="Your Message" class="form-control"></textarea>
+        <textarea rows="3" formControlName="message" placeholder="Message" class="form-control"></textarea>
         <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="error">
           Message is required.
         </div>
@@ -24,7 +24,7 @@
     <div class="d-flex justify-content-center mt-5">
       <button type="submit" [disabled]="contactForm.invalid"
         class="d-flex justify-content-center align-items-center gap-2">
-        Send Message
+        Submit
         <div class="spinner-border" role="status" *ngIf="submitLoader"></div>
       </button>
     </div>

@@ -114,7 +114,7 @@ a {
         display: flex;
         justify-content: center;
         gap: 2rem;
-        font-family: "graphik", sans-serif;
+        font-family: "monterrat", sans-serif;
         color: var(--primary-dark);
         text-transform: uppercase;
 
@@ -178,6 +178,7 @@ a {
         .accordion-header {
             cursor: pointer;
             border: none;
+            text-transform: uppercase;
 
             .accordion-button {
                 padding: 10px 16px;
@@ -210,7 +211,7 @@ a {
 
     .tokenImg {
         width: 309.92px;
-        height: 288.44px;
+        // height: 288.44px;
     }
 
     .card-wrapper {
