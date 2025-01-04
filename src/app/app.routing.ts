@@ -35,22 +35,6 @@ const routes: Routes = [
     loadComponent: () => import('./contact-us/contact-us.component').then(m => m.ContactUsComponent)
   },
   {
-    path: 'vote',
-    loadComponent: () => import('./vote/vote.component').then(m => m.VoteComponent)
-  },
-  {
-    path: 'timeline',
-    loadComponent: () => import('./timeline/timeline.component').then(m => m.TimelineComponent)
-  },
-  {
-    path: 'post',
-    loadComponent: () => import('./post/post.component').then(m => m.PostComponent)
-  },
-  {
-    path: 'test',
-    loadComponent: () => import('./test/test.component').then(m => m.TestComponent)
-  },
-  {
     path: '**',
     redirectTo: '',
     pathMatch: 'full'
