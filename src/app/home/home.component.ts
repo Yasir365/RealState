@@ -71,54 +71,54 @@ export class HomeComponent {
       id: '8',
       image: '/assets/images/stock/8.jpg'
     },
-    {
-      id: '9',
-      image: '/assets/images/stock/9.jpg'
-    },
-    {
-      id: '10',
-      image: '/assets/images/stock/10.jpg'
-    },
-    {
-      id: '11',
-      image: '/assets/images/stock/11.jpg'
-    },
-    {
-      id: '12',
-      image: '/assets/images/stock/12.jpg'
-    },
-    {
-      id: '13',
-      image: '/assets/images/stock/13.jpg'
-    },
-    {
-      id: '14',
-      image: '/assets/images/stock/14.jpg'
-    },
-    {
-      id: '15',
-      image: '/assets/images/stock/15.jpg'
-    },
-    {
-      id: '16',
-      image: '/assets/images/stock/16.jpg'
-    },
-    {
-      id: '17',
-      image: '/assets/images/stock/17.jpg'
-    },
-    {
-      id: '18',
-      image: '/assets/images/stock/18.jpg'
-    },
-    {
-      id: '19',
-      image: '/assets/images/stock/19.jpg'
-    },
-    {
-      id: '20',
-      image: '/assets/images/stock/20.jpg'
-    }
+    // {
+    //   id: '9',
+    //   image: '/assets/images/stock/9.jpg'
+    // },
+    // {
+    //   id: '10',
+    //   image: '/assets/images/stock/10.jpg'
+    // },
+    // {
+    //   id: '11',
+    //   image: '/assets/images/stock/11.jpg'
+    // },
+    // {
+    //   id: '12',
+    //   image: '/assets/images/stock/12.jpg'
+    // },
+    // {
+    //   id: '13',
+    //   image: '/assets/images/stock/13.jpg'
+    // },
+    // {
+    //   id: '14',
+    //   image: '/assets/images/stock/14.jpg'
+    // },
+    // {
+    //   id: '15',
+    //   image: '/assets/images/stock/15.jpg'
+    // },
+    // {
+    //   id: '16',
+    //   image: '/assets/images/stock/16.jpg'
+    // },
+    // {
+    //   id: '17',
+    //   image: '/assets/images/stock/17.jpg'
+    // },
+    // {
+    //   id: '18',
+    //   image: '/assets/images/stock/18.jpg'
+    // },
+    // {
+    //   id: '19',
+    //   image: '/assets/images/stock/19.jpg'
+    // },
+    // {
+    //   id: '20',
+    //   image: '/assets/images/stock/20.jpg'
+    // }
   ];
 
 
