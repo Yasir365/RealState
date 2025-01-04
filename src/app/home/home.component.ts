@@ -21,7 +21,9 @@ export class HomeComponent {
     dots: false,
     autoHeight: true,
     autoWidth: true,
-    autoplayTimeout: 2500,
+    autoplayTimeout: 3000,
+    autoplaySpeed: 3000,
+    slideTransition: 'linear',
     margin: 10,
     autoplayHoverPause: false,
     responsive: {
@@ -39,34 +41,87 @@ export class HomeComponent {
 
   carouselData = [
     {
-      id: '0',
-      image: '/assets/images/carousel/1.webp'
-    },
-    {
       id: '1',
-      image: '/assets/images/carousel/2.webp'
+      image: '/assets/images/stock/1.jpg'
     },
     {
       id: '2',
-      image: '/assets/images/carousel/3.webp'
+      image: '/assets/images/stock/2.jpg'
     },
     {
       id: '3',
-      image: '/assets/images/carousel/4.webp'
+      image: '/assets/images/stock/3.jpg'
     },
     {
       id: '4',
-      image: '/assets/images/carousel/5.webp'
+      image: '/assets/images/stock/4.jpg'
     },
     {
       id: '5',
-      image: '/assets/images/carousel/6.webp'
+      image: '/assets/images/stock/5.jpg'
     },
     {
       id: '6',
-      image: '/assets/images/carousel/7.webp'
+      image: '/assets/images/stock/6.jpg'
     },
-  ]
+    {
+      id: '7',
+      image: '/assets/images/stock/7.jpg'
+    },
+    {
+      id: '8',
+      image: '/assets/images/stock/8.jpg'
+    },
+    {
+      id: '9',
+      image: '/assets/images/stock/9.jpg'
+    },
+    {
+      id: '10',
+      image: '/assets/images/stock/10.jpg'
+    },
+    {
+      id: '11',
+      image: '/assets/images/stock/11.jpg'
+    },
+    {
+      id: '12',
+      image: '/assets/images/stock/12.jpg'
+    },
+    {
+      id: '13',
+      image: '/assets/images/stock/13.jpg'
+    },
+    {
+      id: '14',
+      image: '/assets/images/stock/14.jpg'
+    },
+    {
+      id: '15',
+      image: '/assets/images/stock/15.jpg'
+    },
+    {
+      id: '16',
+      image: '/assets/images/stock/16.jpg'
+    },
+    {
+      id: '17',
+      image: '/assets/images/stock/17.jpg'
+    },
+    {
+      id: '18',
+      image: '/assets/images/stock/18.jpg'
+    },
+    {
+      id: '19',
+      image: '/assets/images/stock/19.jpg'
+    },
+    {
+      id: '20',
+      image: '/assets/images/stock/20.jpg'
+    }
+  ];
+
 
   factions = [
     {
@@ -98,5 +153,15 @@ export class HomeComponent {
 
   toggleAccordion(index: number): void {
     this.activeIndex = this.activeIndex === index ? null : index;
+  }
+
+  openAccordion(index: number): void {
+    this.activeIndex = index;
+  }
+
+  closeAccordion(index: number): void {
+    if (this.activeIndex === index) {
+      this.activeIndex = null;
+    }
   }
 }
