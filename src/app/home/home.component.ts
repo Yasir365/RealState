@@ -22,6 +22,7 @@ export class HomeComponent {
     autoHeight: true,
     autoWidth: true,
     autoplaySpeed: 3000,
+    smartSpeed: 3000,
     slideTransition: 'linear',
     margin: 10,
     autoplayHoverPause: false,
