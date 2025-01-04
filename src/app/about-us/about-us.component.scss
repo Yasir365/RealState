@@ -1,11 +1,13 @@
 .banner {
-    background: url('/assets/images/stock/1.jpg');
+    background: url('/assets/images/stock/14.jpg');
     color: #fff;
     text-align: center;
-    min-height: 300px;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     h1 {
         font-size: 3rem;
