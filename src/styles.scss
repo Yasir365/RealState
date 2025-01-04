@@ -51,6 +51,7 @@ body {
 .comming-soon {
     padding-top: 80px;
     .image-wrapper {
+        margin-bottom: 40px;
         height: 260px;
         width: 100%;
         display: flex;
@@ -59,7 +60,6 @@ body {
         background-color: var(--white);
         box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
         border-radius: 20px;
-        // margin: 80px auto;
 
         h1 {
             font-size: 5rem;
