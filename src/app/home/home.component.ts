@@ -42,35 +42,35 @@ export class HomeComponent {
   carouselData = [
     {
       id: '1',
-      image: '/assets/images/stock/1.jpg'
+      image: '/assets/images/carousel/1.jpg'
     },
     {
       id: '2',
-      image: '/assets/images/stock/2.jpg'
+      image: '/assets/images/carousel/2.jpg'
     },
     {
       id: '3',
-      image: '/assets/images/stock/3.jpg'
+      image: '/assets/images/carousel/3.jpg'
     },
     {
       id: '4',
-      image: '/assets/images/stock/4.jpg'
+      image: '/assets/images/carousel/4.jpg'
     },
     {
       id: '5',
-      image: '/assets/images/stock/5.jpg'
+      image: '/assets/images/carousel/5.jpg'
     },
     {
       id: '6',
-      image: '/assets/images/stock/6.jpg'
+      image: '/assets/images/carousel/6.jpg'
     },
     {
       id: '7',
-      image: '/assets/images/stock/7.jpg'
+      image: '/assets/images/carousel/7.jpg'
     },
     {
       id: '8',
-      image: '/assets/images/stock/8.jpg'
+      image: '/assets/images/carousel/8.jpg'
     },
     // {
     //   id: '9',
