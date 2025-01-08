@@ -157,7 +157,6 @@ a {
 .about {
     .wrapper {
         box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
-        ;
         background-color: var(--white);
         padding: 2rem;
         border-radius: 20px;
@@ -167,7 +166,6 @@ a {
         background: #fff;
         border: none;
         box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
-        ;
 
         .accordion-header {
             cursor: pointer;
@@ -271,7 +269,6 @@ a {
 
 @media screen and (max-width: 992px) {
     .hero {
-
         .content {
             padding-top: 0;
         }
