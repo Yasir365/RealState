@@ -47,11 +47,8 @@ a {
 }
 
 .bg-light {
-    // background: linear-gradient(to right, #E9E9FF, #fff);
     background-color: #e9e9ff95 !important;
 }
-
-
 
 
 
@@ -65,10 +62,8 @@ a {
         content: "";
         position: absolute;
         top: 0;
-        // right: -65px;
         right: -8rem;
         width: 500px;
-        // height: 350px;
         height: 408px;
         background: url("/assets/images/globe.gif");
         background-position: right;
@@ -158,8 +153,6 @@ a {
 
 
 
-
-
 /* About section */
 .about {
     .wrapper {
@@ -206,13 +199,10 @@ a {
 
 
 
-
-
 /* TOKEN COMMITMENT */
 .tokenCommitment {
 
     .tokenImg {
-        // width: 330px;
         height: 270px;
 
         img {
@@ -252,8 +242,6 @@ a {
         }
     }
 }
-
-
 
 
 
@@ -361,8 +349,6 @@ a {
             .owl-item {
 
                 img {
-                    // height: 120px;
-                    // width: 120px;
                     margin: 0;
                 }
             }

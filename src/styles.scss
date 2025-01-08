@@ -155,7 +155,7 @@ body {
 
             p {
                 font-size: 1rem;
-                color: var(--black);
+                color: #666;
                 line-height: 1.8;
                 text-align: justify;
 
@@ -208,6 +208,7 @@ body {
 
 
 @media screen and (max-width: 768px) {
+
     .page-section .card-wrapper .card,
     .page-section .card-wrapper .card3,
     .page-section .card-wrapper .card2 {
