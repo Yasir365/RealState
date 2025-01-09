@@ -95,6 +95,40 @@
 }
 
 
+.our-team {
+
+    .item-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+
+        .item {
+            width: calc(50% - 20px);
+
+            .img-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
+            img {
+                width: 400px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            h3,
+            h4 {
+                text-align: center;
+            }
+        }
+    }
+
+}
+
 
 
 
