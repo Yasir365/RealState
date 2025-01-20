@@ -51,7 +51,7 @@
 
     .options {
         font-size: 1.6rem;
-        font-weight: 800;
+        font-weight: 600;
         display: flex;
         justify-content: center;
         gap: 2rem;
@@ -67,6 +67,10 @@
         .option2 {
             color: var(--primary-dark);
             font-family: "Montserrat", sans-serif;
+        }
+
+        .divider {
+            border-right: 1px solid var(--primary-dark);
         }
 
     }
