@@ -1,35 +1,38 @@
 <!-- Hero Section -->
-<section class="hero text-center text-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-12 mx-auto content">
-                <h1 class="title">Welcome to REAL</h1>
-                <h2 class="sub-title">REAL is a community-driven Real Estate DAO with a deflationary twist!</h2>
-                <h3 class="options">
-                    <span class="option1"> REAL Estate </span>
-                    <span class="option2"> REAL Token </span>
-                    <span class="option3"> REAL Value </span>
-                </h3>
-                <p class="description">
-                    Our mission is to create a real world use-case on the Ethereum blockchain by
-                    tokenizing the real-estate experience in the form of a deflationary crypto token.
-                </p>
+<div class="backgroundImage">
+    <section class="hero text-center text-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-12 mx-auto content">
+                    <h1 class="title">Welcome to REAL</h1>
+                    <h2 class="sub-title">REAL is a community-driven Real Estate DAO with a deflationary twist!</h2>
+                    <h3 class="options">
+                        <span class="option1"> REAL Estate </span>
+                        <span class="option2"> REAL Token </span>
+                        <span class="option3"> REAL Value </span>
+                    </h3>
+                    <p class="description">
+                        Our mission is to create a real world use-case on the Ethereum blockchain by
+                        tokenizing the real-estate experience in the form of a deflationary crypto token.
+                    </p>
+                </div>
             </div>
+    
+            <div class="d-flex justify-content-center d-lg-none d-block pb-5 globe">
+                <img src="/assets/images/globe.gif" alt="">
+            </div>
+    
+            <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let slide of carouselData">
+                    <ng-template class="slide" carouselSlide [id]="slide.id">
+                        <img [src]="slide.image" alt="" title="">
+                    </ng-template>
+                </ng-container>
+            </owl-carousel-o>
         </div>
+    </section>
+</div>
 
-        <div class="d-flex justify-content-center d-lg-none d-block pb-5 globe">
-            <img src="/assets/images/globe.gif" alt="">
-        </div>
-
-        <owl-carousel-o [options]="customOptions">
-            <ng-container *ngFor="let slide of carouselData">
-                <ng-template class="slide" carouselSlide [id]="slide.id">
-                    <img [src]="slide.image" alt="" title="">
-                </ng-template>
-            </ng-container>
-        </owl-carousel-o>
-    </div>
-</section>
 
 <!-- About Section -->
 <section class="about bg-light pad">

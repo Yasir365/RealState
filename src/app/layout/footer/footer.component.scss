@@ -122,29 +122,25 @@
                     bottom: 0;
                     left: 0;
                     height: 2px;
-                    width: 0;
-                    background-color: var(--secondary-dark, #4CAF50);
-                    /* Default green if no custom variable */
+                    width: 0%;
+                    background-color: var(--primary-dark);
                     transition: width 0.3s ease-in-out;
                 }
+
+                &:hover {
+                    transform: translateX(5px);
+                }
             }
+
+            .links:hover::after,
+            .links.active::after {
+                width: 50%;
+            }
+
         }
 
 
-        .links:hover::after,
-        .links.active::after {
-            width: 100%;
-        }
 
-        .links:hover {
-            color: var(--secondary-dark, #4CAF50);
-            transform: translateX(5px);
-        }
-
-        .links.active {
-            font-weight: bold;
-            color: var(--secondary-dark, #4CAF50);
-        }
 
     }
 
