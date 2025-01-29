@@ -55,7 +55,8 @@ body {
 
 // pages css
 .page-section {
-    // padding-top: 5rem;
+    position: relative;
+    z-index: 10000;
 
     .hero {
         min-height: 50vh;
@@ -272,4 +273,53 @@ body {
 
 .bg-light {
     background-color: #e9e9ff95 !important;
+}
+
+
+
+.banner {
+    background: url(/assets/images/bg_1.webp);
+    color: #fff;
+    text-align: center;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: revert-layer;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        color: var(--primary-dark);
+        font-weight: 700;
+    }
+    
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -47px;
+        overflow: visible;
+        width: 50%;
+        height: 108px;
+        z-index: 1;
+        transform: skewY(5deg);
+        background-color: #fff;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -47px;
+        overflow: visible;
+        width: 50%;
+        height: 108px;
+        z-index: 1;
+        transform: skewY(-5deg);
+        background-color: #fff;
+    }
 }
