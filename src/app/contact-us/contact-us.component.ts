@@ -10,5 +10,6 @@ import { ContactFormComponent } from '../shared/contact-form/contact-form.compon
   styleUrls: ['./contact-us.component.scss']
 })
 export class ContactUsComponent {
-
+  email1 = "info@bbdc.io"
+  email2 = "support@bbdc.io"
 }
