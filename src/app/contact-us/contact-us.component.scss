@@ -3,3 +3,218 @@
     background-size: cover;
     background-position: top;
 }
+
+
+h2,
+h3 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 300;
+}
+
+.banner p.lead {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease;
+}
+
+.banner .btn {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    animation: fadeIn 2s ease;
+}
+
+/* Property Submission Section */
+.property-submission {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-dark);
+}
+
+.section-description {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.steps-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.step {
+    text-align: center;
+    padding: 20px;
+    max-width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+}
+
+.step-icon {
+    font-size: 2.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 20px;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.step p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.step .btn {
+    background: var(--primary-dark);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.step .btn:hover {
+    background: var(--secondary-dark);
+}
+
+/* Why Submit Section */
+.why-submit {
+    padding: 80px 0;
+    background: var(--primary-dark);
+    color: white;
+}
+
+.benefits-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    text-align: center;
+    padding: 20px;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.benefit h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.benefit p {
+    font-size: 1rem;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.contact-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-option {
+    text-align: center;
+    padding: 20px;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 20px;
+}
+
+.contact-option h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.contact-option p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: var(--primary-dark);
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
